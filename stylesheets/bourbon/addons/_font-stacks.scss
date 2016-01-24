@@ -1,0 +1,6 @@
+
+@include font-face("sf-ui-text-regular", "../../fonts/sf-ui-text-regular", normal, $file-formats: eot ttf otf svg woff woff2);
+@include font-face("sf-ui-text-bold", "../../fonts/sf-ui-text-bold", normal, $file-formats: eot ttf otf svg woff woff2);
+
+$sf: "sf-ui-text-regular", "Helvetica", "Arial", sans-serif;
+$sfb: "sf-ui-text-bold", "Helvetica", "Arial", sans-serif;
