@@ -260,14 +260,7 @@ img {
       .projects h1:last-child {
         margin-right: 0; } }
   .projects h1.ye-say {
-    max-width: none;
-    float: left;
-    display: block;
-    margin-right: 1.87727%;
-    width: 100%;
     margin-bottom: 24px; }
-    .projects h1.ye-say:last-child {
-      margin-right: 0; }
 .projects .about {
   margin: 48px 18px 0 18px; }
   @media screen and (min-width: 43.75em) {

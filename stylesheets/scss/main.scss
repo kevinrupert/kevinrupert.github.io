@@ -73,8 +73,6 @@ img {
             @include span-columns(15);
         }
         &.ye-say {
-            max-width: none;
-            @include span-columns(15);
             margin-bottom: 24px;
         }
     }
