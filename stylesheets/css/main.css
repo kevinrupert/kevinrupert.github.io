@@ -2,12 +2,12 @@
   font-family: "sf-ui-display-bold";
   font-style: normal;
   font-weight: normal;
-  src: url("/../../fonts/sf-ui-display-bold.eot?#iefix") format("embedded-opentype"), url("/../../fonts/sf-ui-display-bold.woff2") format("woff2"), url("/../../fonts/sf-ui-display-bold.woff") format("woff"), url("/../../fonts/sf-ui-display-bold.ttf") format("truetype"), url("/../../fonts/sf-ui-display-bold.svg#sf-ui-display-bold") format("svg"); }
+  src: url("../../fonts/sf-ui-display-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/sf-ui-display-bold.woff2") format("woff2"), url("../../fonts/sf-ui-display-bold.woff") format("woff"), url("../../fonts/sf-ui-display-bold.ttf") format("truetype"), url("../../fonts/sf-ui-display-bold.svg#sf-ui-display-bold") format("svg"); }
 @font-face {
   font-family: "sf-ui-text-regular";
   font-style: normal;
   font-weight: normal;
-  src: url("/../../fonts/sf-ui-text-regular.eot?#iefix") format("embedded-opentype"), url("/../../fonts/sf-ui-text-regular.woff2") format("woff2"), url("/../../fonts/sf-ui-text-regular.woff") format("woff"), url("/../../fonts/sf-ui-text-regular.ttf") format("truetype"), url("/../../fonts/sf-ui-text-regular.svg#sf-ui-text-regular") format("svg"); }
+  src: url("../../fonts/sf-ui-text-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/sf-ui-text-regular.woff2") format("woff2"), url("../../fonts/sf-ui-text-regular.woff") format("woff"), url("../../fonts/sf-ui-text-regular.ttf") format("truetype"), url("../../fonts/sf-ui-text-regular.svg#sf-ui-text-regular") format("svg"); }
 html {
   box-sizing: border-box; }
 
@@ -22,7 +22,7 @@ button {
   -o-appearance: none;
   appearance: none;
   -webkit-font-smoothing: antialiased;
-  background-color: #a2856a;
+  background-color: #A2856A;
   border-radius: 3px;
   border: none;
   color: #fff;
@@ -49,7 +49,7 @@ button {
 
 fieldset {
   background-color: #b69f89;
-  border: 1px solid #a2856a;
+  border: 1px solid #A2856A;
   margin: 0 0 0.75em;
   padding: 1.5em; }
 
@@ -71,8 +71,8 @@ label {
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
 select[multiple=multiple],
 textarea {
-  background-color: white;
-  border: 1px solid #a2856a;
+  background-color: #fff;
+  border: 1px solid #A2856A;
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
@@ -89,7 +89,7 @@ textarea {
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
   select[multiple=multiple]:focus,
   textarea:focus {
-    border-color: #a2856a;
+    border-color: #A2856A;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(149, 120, 93, 0.7);
     outline: none; }
 
@@ -147,7 +147,7 @@ th {
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #a2856a;
+  border-bottom: 1px solid #A2856A;
   padding: 0.75em 0; }
 
 tr,
@@ -161,7 +161,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
-  color: #a2856a;
+  color: #A2856A;
   font-family: "sf-ui-text-regular", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
@@ -181,7 +181,7 @@ p {
   margin: 0 0 0.75em; }
 
 a {
-  color: #a2856a;
+  color: #A2856A;
   transition: color 0.3s linear; }
   a:active, a:focus, a:hover {
     color: #765f4a; }
@@ -189,7 +189,7 @@ a {
     outline: none; }
 
 hr {
-  border-bottom: 1px solid #a2856a;
+  border-bottom: 1px solid #A2856A;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -201,9 +201,9 @@ picture {
   max-width: 100%; }
 
 body {
-  color: #a2856a; }
+  color: #A2856A; }
   body ::selection {
-    background: #a2856a;
+    background: #A2856A;
     color: white;
     letter-spacing: -0.3px; }
 
@@ -325,3 +325,5 @@ body {
     .projects h1 {
       font-size: 5.25em;
       margin-left: 0; } }
+
+/*# sourceMappingURL=main.css.map */
