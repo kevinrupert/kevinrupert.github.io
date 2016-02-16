@@ -1,13 +1,13 @@
 @font-face {
   font-family: "sf-ui-display-bold";
   font-style: normal;
-  font-weight: normal;
-  src: url("../../fonts/sf-ui-display-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/sf-ui-display-bold.woff2") format("woff2"), url("../../fonts/sf-ui-display-bold.woff") format("woff"), url("../../fonts/sf-ui-display-bold.ttf") format("truetype"), url("../../fonts/sf-ui-display-bold.svg#sf-ui-display-bold") format("svg"); }
+  font-weight: bold;
+  src: url("/../../fonts/sf-ui-display-bold.eot?#iefix") format("embedded-opentype"), url("/../../fonts/sf-ui-display-bold.woff2") format("woff2"), url("/../../fonts/sf-ui-display-bold.woff") format("woff"), url("/../../fonts/sf-ui-display-bold.ttf") format("truetype"), url("/../../fonts/sf-ui-display-bold.svg#sf-ui-display-bold") format("svg"); }
 @font-face {
   font-family: "sf-ui-text-regular";
   font-style: normal;
   font-weight: normal;
-  src: url("../../fonts/sf-ui-text-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/sf-ui-text-regular.woff2") format("woff2"), url("../../fonts/sf-ui-text-regular.woff") format("woff"), url("../../fonts/sf-ui-text-regular.ttf") format("truetype"), url("../../fonts/sf-ui-text-regular.svg#sf-ui-text-regular") format("svg"); }
+  src: url("/../../fonts/sf-ui-text-regular.eot?#iefix") format("embedded-opentype"), url("/../../fonts/sf-ui-text-regular.woff2") format("woff2"), url("/../../fonts/sf-ui-text-regular.woff") format("woff"), url("/../../fonts/sf-ui-text-regular.ttf") format("truetype"), url("/../../fonts/sf-ui-text-regular.svg#sf-ui-text-regular") format("svg"); }
 html {
   box-sizing: border-box; }
 
@@ -200,6 +200,9 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+html, body {
+  width: 100%; }
+
 body {
   color: #A2856A; }
   body ::selection {
@@ -215,6 +218,9 @@ body {
     clear: both;
     content: "";
     display: table; }
+
+img {
+  width: 100%; }
 
 .caption {
   font-size: 0.75em;
@@ -233,6 +239,7 @@ body {
       margin-right: 0; } }
 
 .projects h1 {
+  font-family: "sf-ui-display-bold", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 2em;
   margin: 24px 18px 0 18px;
   max-width: 800px; }
