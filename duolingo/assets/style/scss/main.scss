@@ -434,6 +434,9 @@ h1, h2, h3, p, a {
   background-color: $black;
   color: $white;
   min-height: 300px;
+  @include breakpoint(medium-screen-up) {
+    min-height: 500px;
+  }
   @include breakpoint(large-screen-up) {
     min-height: 100vh;
   }
