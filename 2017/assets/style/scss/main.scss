@@ -205,7 +205,7 @@ h1, h2, h3, p, a {
 
 .intro {
   @include breakpoint(large-screen-up) {
-    min-height: 100vh;
+    min-height: 850px;
   }
   .text {
     padding: 24px;
@@ -244,7 +244,7 @@ h1, h2, h3, p, a {
     min-height: 500px;
   }
   @include breakpoint(large-screen-up) {
-    min-height: 100vh;
+    min-height: 850px;
   }
   a {
     color: $white;
@@ -282,7 +282,7 @@ h1, h2, h3, p, a {
 
 .after-intro {
   @include breakpoint(large-screen-up) {
-    min-height: 100vh;
+    min-height: 850px;
     width: auto;
   }
   .phone {
@@ -438,7 +438,7 @@ h1, h2, h3, p, a {
     min-height: 500px;
   }
   @include breakpoint(large-screen-up) {
-    min-height: 100vh;
+    min-height: 850px;
   }
   a {
     color: $white;

@@ -242,7 +242,7 @@ h1::selection, h2::selection, h3::selection, p::selection, a::selection {
 
 @media (min-width: 62.5em) {
   .intro {
-    min-height: 100vh; } }
+    min-height: 850px; } }
 .intro .text {
   padding: 24px;
   box-sizing: border-box; }
@@ -322,7 +322,7 @@ h1::selection, h2::selection, h3::selection, p::selection, a::selection {
       min-height: 500px; } }
   @media (min-width: 62.5em) {
     .project-intro {
-      min-height: 100vh; } }
+      min-height: 850px; } }
   .project-intro a {
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
@@ -378,7 +378,7 @@ h1::selection, h2::selection, h3::selection, p::selection, a::selection {
 
 @media (min-width: 62.5em) {
   .after-intro {
-    min-height: 100vh;
+    min-height: 850px;
     width: auto; } }
 .after-intro .phone {
   padding: 24px;
@@ -667,7 +667,7 @@ h1::selection, h2::selection, h3::selection, p::selection, a::selection {
       min-height: 500px; } }
   @media (min-width: 62.5em) {
     .center-intro {
-      min-height: 100vh; } }
+      min-height: 850px; } }
   .center-intro a {
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
