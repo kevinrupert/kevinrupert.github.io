@@ -378,8 +378,7 @@ h1::selection, h2::selection, h3::selection, p::selection, a::selection {
 
 @media (min-width: 62.5em) {
   .after-intro {
-    min-height: 850px;
-    width: auto; } }
+    min-height: 850px; } }
 .after-intro .phone {
   padding: 24px;
   padding-bottom: 0;

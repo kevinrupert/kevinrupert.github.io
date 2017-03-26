@@ -283,7 +283,7 @@ h1, h2, h3, p, a {
 .after-intro {
   @include breakpoint(large-screen-up) {
     min-height: 850px;
-    width: auto;
+    // width: auto;
   }
   .phone {
     padding: 24px;
