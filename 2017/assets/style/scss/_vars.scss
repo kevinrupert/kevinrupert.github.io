@@ -1,12 +1,12 @@
 // Colors
 $white: #ffffff;
-$black: #111111;
+$black: #222222;
 
 // Overlays
-$image-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.6) 100%);
+$image-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
 
 // Typography
-$circular: "circular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+$untitled: "untitled", "Helvetica", "Roboto", "Arial", sans-serif;
 
 // Font Sizes
 $base-font-size: 16px;
@@ -15,4 +15,4 @@ $base-font-size: 16px;
 $base-line-height: 1;
 
 // Font Colors
-$base-font-color: $black;
+$base-font-color: $white;
