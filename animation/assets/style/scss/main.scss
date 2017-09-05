@@ -1,0 +1,347 @@
+@import 'base';
+@import 'vars';
+
+// Mixins
+@mixin breakpoint($point) {
+  @if $point == small-screen-up {
+    @media (min-width: $small-screen) { @content; }
+  }
+  @else if $point == medium-screen-up {
+    @media (min-width: $medium-screen) { @content; }
+  }
+  @else if $point == large-screen-up {
+    @media (min-width: $large-screen) { @content; }
+  }
+  @else if $point == extra-large-screen-up {
+    @media (min-width: $extra-large-screen) { @content; }
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+// Breakpoints
+
+$small-screen: em(500);
+$medium-screen: em(900);
+$large-screen: em(1200);
+$extra-large-screen: em(1600);
+
+// Styles
+
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: $sans;
+  font-size: $base-font-size;
+  font-weight: normal;
+  font-style: normal;
+  line-height: $base-line-height;
+  color: $black;
+  -webkit-font-smoothing: antialiased;
+  ::selection {
+    background: $black;
+    color: $white;
+  }
+}
+
+// Typography
+
+.title-1 {
+  font-size: 24px;
+  line-height: 36px;
+  @include breakpoint(large-screen-up) {
+    font-size: 36px;
+    line-height: 48px;
+    max-width: 800px;
+  }
+  &.border {
+    border-top: 1px solid $black;
+    padding-top: 10px;
+    @include breakpoint(large-screen-up) {
+      padding-top: 20px;
+    }
+  }
+}
+
+.regular {
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 600px;
+}
+
+.mono {
+  font-family: $mono;
+  font-size: 15px;
+  line-height: 22px;
+  max-width: 800px;
+  @include breakpoint(large-screen-up) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.sub-title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+// Design
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  z-index: 10;
+  .back-link {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  @include breakpoint(large-screen-up) {
+    left: 60px;
+    top: 36px;
+    position: fixed;
+  }
+}
+
+.page {
+  position: relative;
+  @include breakpoint(large-screen-up) {
+    display: flex;
+  }
+  .page-title {
+    margin: 64px 30px 0 30px;
+    padding-top: 10px;
+    border-top: 1px $black solid;
+    @include breakpoint(large-screen-up) {
+      width: 300px;
+      padding-top: 20px;
+      margin: 136px 30px 0 60px;
+      position: fixed;
+      height: 100vh;
+    }
+    @include breakpoint(extra-large-screen-up) {
+      width: 500px;
+    }
+  }
+  .page-content {
+    margin-top: 30px;
+    padding: 0 30px;
+    @include breakpoint(medium-screen-up) {
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    @include breakpoint(large-screen-up) {
+      flex: 2;
+      // margin-top: 0;
+      // padding: 0 45px 0 15px;
+      // margin-left: 390px;
+      margin: 136px 15px 0 390px;
+    }
+    @include breakpoint(extra-large-screen-up) {
+      margin-left: 590px;
+    }
+    .overview {
+      &.last {
+        margin-bottom: 30px;
+        @include breakpoint(large-screen-up) {
+          margin-bottom: 136px;
+        }
+      }
+      &.margin-top {
+        @include breakpoint(large-screen-up) {
+          margin-top: 100px;
+        }
+      }
+      @include breakpoint(medium-screen-up) {
+        margin: 0 15px;
+        box-sizing: border-box;
+      }
+      @include breakpoint(large-screen-up) {
+        // margin: 136px 15px 0 15px;
+        // padding: 20px 0 0 0;
+        padding-top: 20px;
+        border-top: 1px $black solid;
+      }
+      .title-1.border {
+        @include breakpoint(large-screen-up) {
+          border-top: none;
+          padding-top: 0;
+        }
+      }
+      .mono, .regular {
+        margin-top: 30px;
+        &.last {
+          margin-top: 0;
+        }
+      }
+      ol.mono {
+        margin-top: 15px;
+        li {
+          margin-top: 30px;
+        }
+      }
+    }
+    .content {
+      // margin-top: 30px;
+      @include breakpoint(large-screen-up) {
+        // margin-top: 100px;
+        &.top {
+          // margin-top: 136px;
+        }
+        &.last {
+          margin-bottom: 30px;
+          @include breakpoint(large-screen-up) {
+            margin-bottom: 136px;
+          }
+        }
+      }
+      &.grid {
+        margin-top: 30px;
+        @include breakpoint(large-screen-up) {
+          margin-top: 100px;
+        }
+        &.top {
+          margin-top: 0;
+        }
+        .grid-item-link {
+          display: inline-block;
+          &:hover {
+            img, video {
+              transform: scale(1.05);
+            }
+            .icon {
+              img {
+                transform: none;
+              }
+            }
+          }
+          // .media {
+          //   position: relative;
+          //   overflow: hidden;
+          //   img {
+          //     width: 100%;
+          //     transition: transform 1s;
+          //   }
+          //   .icon {
+          //     width: 64px;
+          //     height: 64px;
+          //     background: $white;
+          //     position: absolute;
+          //     bottom: 0;
+          //     right: 0;
+          //     display: flex;
+          //     align-items: center;
+          //     justify-content: center;
+          //     img {
+          //       width: 24px;
+          //       height: 24px;
+          //     }
+          //   }
+          // }
+        }
+        .grid-sizer {
+          @include breakpoint(medium-screen-up) {
+            width: 50%;
+          }
+        }
+        .grid-item {
+          margin-bottom: 30px;
+          line-height: 0;
+          @include breakpoint(medium-screen-up) {
+            width: 50%;
+            height: auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+            &.grid-item--width2 {
+              width: 100%;
+            }
+          }
+          .media {
+            position: relative;
+            overflow: hidden;
+            img, video {
+              width: 100%;
+              transition: transform 1s;
+            }
+            .icon {
+              width: 64px;
+              height: 64px;
+              background: $white;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                width: 24px;
+                height: 24px;
+              }
+            }
+          }
+          .mono {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
