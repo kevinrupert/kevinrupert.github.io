@@ -9,3 +9,19 @@ var $grid = $('.grid').masonry({
 $grid.imagesLoaded().progress( function() {
   $grid.masonry('layout');
 });
+
+var posterCount = $('video').length;
+var postersLoaded = 0;
+
+$('video').load(function () {
+  postersLoaded++;
+  if (postersLoaded >= posterCount) {
+
+    $('.grid').masonry({
+        itemSelector: '.grid-item'
+    });
+
+    $('.grid').masonry('reloadItems');
+    $('.grid').masonry('layout');
+  }
+});
