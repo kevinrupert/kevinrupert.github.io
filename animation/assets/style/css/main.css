@@ -196,7 +196,13 @@ a {
       margin-bottom: 136px; } }
 
     .page .page-content .content.grid {
-      margin-top: 30px; }
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column; }
+      @media (min-width: 56.25em) {
+        .page .page-content .content.grid {
+          display: flex;
+          flex-wrap: wrap; } }
       @media (min-width: 75em) {
         .page .page-content .content.grid {
           margin-top: 100px; } }
