@@ -16,12 +16,6 @@ var postersLoaded = 0;
 $('video').load(function () {
   postersLoaded++;
   if (postersLoaded >= posterCount) {
-
-    $('.grid').masonry({
-        itemSelector: '.grid-item'
-    });
-
-    $('.grid').masonry('reloadItems');
-    $('.grid').masonry('layout');
+    $grid.masonry('layout');
   }
 });
