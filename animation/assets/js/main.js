@@ -10,12 +10,12 @@ $grid.imagesLoaded().progress( function() {
   $grid.masonry('layout');
 });
 
-var posterCount = $('video').length;
+var posterCount = 12;
 var postersLoaded = 0;
 
 $('video').load(function () {
   postersLoaded++;
-  if (postersLoaded >= posterCount) {
+  if (postersLoaded = posterCount) {
     $grid.masonry('layout');
   }
 });
