@@ -51,7 +51,7 @@ table {
   font-family: "sf";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/SFUItext-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUItext-Regular.woff2") format("woff2"), url("../fonts/SFUItext-Regular.woff") format("woff"), url("../fonts/SFUItext-Regular.ttf") format("truetype"), url("../fonts/SFUItext-Regular.svg#sf") format("svg"); }
+  src: url("../fonts/SFUIText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Regular.woff2") format("woff2"), url("../fonts/SFUIText-Regular.woff") format("woff"), url("../fonts/SFUIText-Regular.ttf") format("truetype"), url("../fonts/SFUIText-Regular.svg#sf") format("svg"); }
 html {
   min-height: 100%;
   width: 100%; }
