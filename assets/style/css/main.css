@@ -112,7 +112,9 @@ a {
     .title-1 {
       font-size: 84px;
       line-height: 84px;
-      max-width: 1000px; } }
+      max-width: 1050px; }
+      .title-1.wider {
+        max-width: 1150px; } }
 
 .title-2 {
   font-size: 24px;
