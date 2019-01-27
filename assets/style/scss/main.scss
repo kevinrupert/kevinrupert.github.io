@@ -122,6 +122,7 @@ a {
   font-size: 48px;
   line-height: 48px;
   font-family: $clearface;
+  color: $white;
   @include breakpoint(large-screen-up) {
     font-size: 84px;
     line-height: 84px;
@@ -133,6 +134,7 @@ a {
   font-size: 24px;
   line-height: 24px;
   font-family: $clearface;
+  color: $white;
   @include breakpoint(medium-screen-up) {
     font-size: 28px;
     line-height: 28px;
@@ -140,6 +142,7 @@ a {
 }
 
 .regular {
+  color: $white;
   font-size: 18px;
   line-height: 32px;
 }
