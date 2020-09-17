@@ -646,6 +646,8 @@ a {
     // justify-content: center;
     img {
       width: 100%;
+      line-height: 0;
+      display: block;
       // min-height: 100%;
       // object-fit: cover;
     }

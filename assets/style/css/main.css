@@ -688,6 +688,8 @@ a:hover {
 }
 .section.full-width-image img {
   width: 100%;
+  line-height: 0;
+  display: block;
 }
 .section.vertical-center {
   align-items: center;
