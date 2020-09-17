@@ -1,2 +1,5 @@
-@include font-face("clearface", "../fonts/ClearfaceITCBQ-Regular", 400, normal, $file-formats: woff woff2);
-@include font-face("sf", "../fonts/SFUIText-Regular", 400, normal, $file-formats: woff woff2);
+@include font-face("inter", "../fonts/UntitledSansWeb-Regular", 400, normal, $file-formats: eot woff woff2);
+@include font-face("inter", "../fonts/Inter-SemiBold", 600, bold, $file-formats: eot woff woff2);
+
+
+// @include font-face("inter", "../fonts/UntitledSansWeb-Regular", 400, normal, $file-formats: eot woff woff2);

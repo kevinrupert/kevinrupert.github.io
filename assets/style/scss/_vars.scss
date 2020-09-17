@@ -1,16 +1,17 @@
 // Colors
 $white: #ffffff;
-$black: #1a1a1a;
-$light-gray: #F4F1F1;
-$gray: #989898;
-
+$pitch-black: #000000;
+$black: #0d0d0d;
+$gray: #7B7B7B;
+$light-gray: #F2F2F4;
 
 // Overlays
 $image-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
 
 // Typography
-$sf: "sf", "Helvetica", "Roboto", "Arial", sans-serif;
-$clearface: "clearface", "Georgia", serif;
+$inter: "inter", "Helvetica", "Roboto", "Arial", sans-serif;
 
+// Animation
 
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 
