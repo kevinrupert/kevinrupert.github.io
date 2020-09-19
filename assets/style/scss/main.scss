@@ -682,10 +682,10 @@ a {
       .layers {
         position: relative;
         margin-top: 160px;
-        margin-bottom: -64px;
+        // margin-bottom: -64px;
         @include breakpoint(medium-screen-up) {
           margin-top: 192px;
-          margin-bottom: 0;
+          // margin-bottom: 0;
         }
         .layer-1, .layer-2, .layer-3 {
           @include aspect-ratio(9, 16);
