@@ -712,6 +712,7 @@ a:hover {
   justify-content: center;
   position: relative;
   display: flex;
+  overflow: hidden;
 }
 .section.experience-model .model .layers {
   position: relative;

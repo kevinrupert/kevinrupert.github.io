@@ -675,6 +675,7 @@ a {
       justify-content: center;
       position: relative;
       display: flex;
+      overflow: hidden;
       // @include breakpoint(medium-screen-up) {
       //   display: flex;
       // }
