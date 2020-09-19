@@ -712,15 +712,19 @@ a:hover {
   justify-content: center;
   position: relative;
   display: flex;
+}
+.section.experience-model .model.overflow {
   overflow: hidden;
 }
 .section.experience-model .model .layers {
   position: relative;
   margin-top: 160px;
+  margin-bottom: -64px;
 }
 @media (min-width: 800px) {
   .section.experience-model .model .layers {
     margin-top: 192px;
+    margin-bottom: 0;
   }
 }
 .section.experience-model .model .layers .layer-1, .section.experience-model .model .layers .layer-2, .section.experience-model .model .layers .layer-3 {

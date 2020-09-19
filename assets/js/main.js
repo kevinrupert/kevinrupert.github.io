@@ -6,6 +6,7 @@ $('.menu-icon').click(function() {
       body.style.position = '';
       body.style.top = '';
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      $('.model').removeClass('overflow');
     }
     else {
       $('.menu, .icon-container').addClass('open');
@@ -13,6 +14,7 @@ $('.menu-icon').click(function() {
       const body = document.body;
       body.style.position = 'fixed';
       body.style.top = `-${scrollY}`;
+      $('.model').addClass('overflow');
     }
     $('.menu-icon').removeClass('highlight');
   }
