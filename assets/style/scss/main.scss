@@ -124,7 +124,7 @@ a {
 .title-1 {
   font-size: 60px;
   line-height: 0.9;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.06em;
   // font-weight: 600;
   @include breakpoint(large-screen-up) {
     font-size: 200px;
@@ -860,6 +860,56 @@ a {
           }
         }
       }
+    }
+  }
+}
+
+.home-page {
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  // padding-right: 64px;
+  @include breakpoint(medium-screen-up) {
+    display: grid;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .text {
+    // margin-bottom: 40px;
+    padding-right: 64px;
+    @include breakpoint(medium-screen-up) {
+      grid-column: 2 / 6;
+      grid-row: 1 / 1;
+      padding-right: 0;
+    }
+    .title-2 {
+      margin-bottom: 40px;
+      @include breakpoint(extra-large-screen-up) {
+        margin-bottom: 80px;
+      }
+    }
+    .paragraph, .title-3 {
+      margin-bottom: 12px;
+      @include breakpoint(extra-large-screen-up) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .image {
+    margin-bottom: 40px;
+    @include breakpoint(medium-screen-up) {
+      grid-column: 7 / 13;
+      grid-row: 1 / 1;
+      margin-bottom: 0;
+    }
+    img {
+      width: 100%;
+      min-height: 100%;
+      object-fit: cover;
     }
   }
 }

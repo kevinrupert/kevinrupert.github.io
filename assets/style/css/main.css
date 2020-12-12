@@ -128,7 +128,7 @@ a:hover {
 .title-1 {
   font-size: 60px;
   line-height: 0.9;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.06em;
 }
 @media (min-width: 1250px) {
   .title-1 {
@@ -942,6 +942,64 @@ a:hover {
   .archive-grid .item .image .text a {
     color: #F2F2F4;
   }
+}
+
+.home-page {
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+@media (min-width: 800px) {
+  .home-page {
+    display: grid;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+.home-page .text {
+  padding-right: 64px;
+}
+@media (min-width: 800px) {
+  .home-page .text {
+    grid-column: 2/6;
+    grid-row: 1/1;
+    padding-right: 0;
+  }
+}
+.home-page .text .title-2 {
+  margin-bottom: 40px;
+}
+@media (min-width: 2200px) {
+  .home-page .text .title-2 {
+    margin-bottom: 80px;
+  }
+}
+.home-page .text .paragraph, .home-page .text .title-3 {
+  margin-bottom: 12px;
+}
+@media (min-width: 2200px) {
+  .home-page .text .paragraph, .home-page .text .title-3 {
+    margin-bottom: 20px;
+  }
+}
+.home-page .image {
+  margin-bottom: 40px;
+}
+@media (min-width: 800px) {
+  .home-page .image {
+    grid-column: 7/13;
+    grid-row: 1/1;
+    margin-bottom: 0;
+  }
+}
+.home-page .image img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .animate-fade {
