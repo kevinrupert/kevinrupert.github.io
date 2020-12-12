@@ -411,6 +411,9 @@ a {
   @include breakpoint(extra-large-screen-up) {
     border-radius: 40px;
   }
+  video {
+    border-radius: 20px;
+  }
   &.small-radius {
     border-radius: 3px;
     video {

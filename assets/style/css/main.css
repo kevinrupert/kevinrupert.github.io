@@ -430,6 +430,9 @@ a:hover {
     border-radius: 40px;
   }
 }
+.screen video {
+  border-radius: 20px;
+}
 .screen.small-radius {
   border-radius: 3px;
 }
