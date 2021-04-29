@@ -188,8 +188,9 @@ a {
   box-sizing: border-box;
   left: 0;
   top: 0;
+  bottom: 0;
   height: 100vh;
-  height: -webkit-fill-available;
+  // height: -webkit-fill-available;
   width: 64px;
   display: flex;
   // flex-direction: column;
@@ -930,10 +931,10 @@ a {
       grid-template-columns: 1fr 1fr;
     }
     @include breakpoint(extra-large-screen-up) {
-      // grid-template-columns: 1fr 2fr;
       width: 1600px;
     }
     .image-container {
+      line-height: 0;
       @include breakpoint(large-screen-up) {
         position: fixed;
         top: 0;
@@ -943,15 +944,12 @@ a {
       }
       @include breakpoint(extra-large-screen-up) {
         width: 800px;
-        // display: flex;
-        // align-items: center;
       }
       .image {
+        overflow: hidden;
+        line-height: 0;
         img {
           width: 100%;
-          // height: auto;
-          // height: 200px;
-          // position: fixed;
         }
       }
     }
