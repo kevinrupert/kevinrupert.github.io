@@ -60,30 +60,33 @@ body {
   height: 100%;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  font-family: $inter;
+  font-family: $plex;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
   color: $black;
-  background: #F2F2F4;
+  background: $cream;
   -webkit-font-smoothing: antialiased;
   position: relative;
   font-feature-settings: 'cv10' on, 'cv01' on;
   ::selection {
-    background: $white;
-    color: $pitch-black;
+    background: $pitch-black;
+    color: $white;
+  }
+  &.fitt-case-study {
+    background: $light-gray;
   }
   &.dark {
     background: $black;
-    color: $light-gray;
+    color: $cream;
     a {
       text-decoration: none;
-      color: $light-gray;
+      color: $cream;
       border-bottom: 1px solid rgba($gray, 0.5);
       transition: all 0.3s ease;
       &:hover {
-        border-bottom: 1px solid $light-gray;
+        border-bottom: 1px solid $cream;
       }
     }
   }
@@ -122,8 +125,10 @@ a {
 // Design
 
 .title-1 {
+  // font-family: $pdu;
   font-size: 60px;
   line-height: 0.9;
+  // text-transform: uppercase;
   letter-spacing: -0.06em;
   // font-weight: 600;
   @include breakpoint(large-screen-up) {
@@ -138,46 +143,46 @@ a {
 }
 
 .title-2 {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1;
   // font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   // color: $gray;
   @include breakpoint(large-screen-up) {
-    font-size: 60px;
+    font-size: 58px;
   }
   @include breakpoint(extra-large-screen-up) {
-    font-size: 80px;
+    font-size: 78px;
   }
 }
 
 .title-3 {
-  font-size: 20px;
-  line-height: 28px;
-  // font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
   letter-spacing: -0.02em;
-  color: $gray;
+  // color: $gray;
   @include breakpoint(large-screen-up) {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 34px;
   }
   @include breakpoint(extra-large-screen-up) {
-    font-size: 32px;
-    line-height: 52px;
+    font-size: 26px;
+    line-height: 40px;
   }
 }
 
 .paragraph {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 26px;
   letter-spacing: -0.02em;
   @include breakpoint(large-screen-up) {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 34px;
   }
   @include breakpoint(extra-large-screen-up) {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 26px;
+    line-height: 40px;
   }
 }
 
@@ -258,12 +263,12 @@ a {
     .menu-icon {
       .icon-container {
         .bar-1, .bar-2 {
-          background: $light-gray;
+          background: $cream;
         }
       }
       &:hover {
         @include breakpoint(large-screen-up) {
-          background: rgba($light-gray, 0.2);
+          background: rgba($cream, 0.2);
         }
     }
     }
@@ -279,16 +284,16 @@ a {
   z-index: 9;
   right: 0;
   top: 0;
-  background: $light-gray;
+  background: $cream;
   border-left: 2px solid $black;
   transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   overflow-y: scroll;
   &.dark {
     background: $black;
-    border-left: 2px solid $light-gray;
+    border-left: 2px solid $cream;
     .menu-grid {
       .menu-item {
-        background: $light-gray;
+        background: $cream;
         a {
           color: $black;
           .title {
@@ -315,7 +320,7 @@ a {
       transition: all 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       transform: translateX(20px);
       background: $black;
-      color: $light-gray;
+      color: $cream;
       &:last-child {
         margin-bottom: 0;
       }
@@ -327,7 +332,7 @@ a {
         display: inline-block;
         height: 100%;
         width: 100%;
-        color: $light-gray;
+        color: $cream;
         overflow: hidden;
         .image {
           position: relative;
@@ -372,7 +377,7 @@ a {
         .title {
           padding: 20px;
           box-sizing: border-box;
-          border-top: 2px solid $light-gray;
+          border-top: 2px solid $cream;
           transition: all 0.5s $cubic;
           @include breakpoint(medium-screen-up) {
             padding: 32px;
@@ -447,6 +452,7 @@ a {
   @include breakpoint(large-screen-up) {
     display: grid;
     padding-left: 0;
+    padding-right: 0;
     padding-top: 80px;
     // padding-right: 0;
     grid-template-columns: repeat(12, 1fr);
@@ -763,6 +769,7 @@ a {
     width: 100vw;
   }
   .archive-title-text {
+    font-family: $pdu;
     font-size: 50vw;
     line-height: 0.8;
     transition: all 0.5s ease;
@@ -865,14 +872,14 @@ a {
           color: $gray;
         }
         @include breakpoint(medium-screen-up) {
-          color: $light-gray;
+          color: $cream;
           height: 40px;
           transform: translateY(-40px);
           position: relative;
           opacity: 0;
           transition: all 0.5s $cubic;
           a {
-            color: $light-gray;
+            color: $cream;
           }
         }
       }
@@ -888,7 +895,7 @@ a {
   right: 0;
   left: 0;
   height: 48px;
-  background: $light-gray;
+  background: $cream;
   z-index: 10;
   &::before {
     content: "";
@@ -992,7 +999,7 @@ a {
               border: none;
               .project {
                 border: none;
-                background: $light-gray;
+                background: $cream;
                 color: $black;
                 .icon {
                   transition: all 0.3s ease;
