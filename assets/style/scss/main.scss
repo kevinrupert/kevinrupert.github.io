@@ -928,7 +928,7 @@ a {
 }
 
 .home-page-container {
-  @include breakpoint(extra-large-screen-up) {
+  @include breakpoint(large-screen-up) {
     display: flex;
     justify-content: center;
   }
@@ -936,25 +936,20 @@ a {
     @include breakpoint(large-screen-up) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-    }
-    @include breakpoint(extra-large-screen-up) {
-      width: 1600px;
+      width: 100%;
+      max-width: 1600px;
     }
     .image-container {
       line-height: 0;
-      @include breakpoint(large-screen-up) {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        right: 0;
-      }
-      @include breakpoint(extra-large-screen-up) {
-        width: 800px;
-      }
+      position: relative;
       .image {
         overflow: hidden;
         line-height: 0;
+        @include breakpoint(large-screen-up) {
+          position: fixed;
+          top: 0;
+          max-width: 800px;
+        }
         img {
           width: 100%;
         }

@@ -1019,7 +1019,7 @@ a:hover {
   justify-content: center;
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 1250px) {
   .home-page-container {
     display: flex;
     justify-content: center;
@@ -1029,33 +1029,24 @@ a:hover {
   .home-page-container .home-page {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 2200px) {
-  .home-page-container .home-page {
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
   }
 }
 .home-page-container .home-page .image-container {
   line-height: 0;
-}
-@media (min-width: 1250px) {
-  .home-page-container .home-page .image-container {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    right: 0;
-  }
-}
-@media (min-width: 2200px) {
-  .home-page-container .home-page .image-container {
-    width: 800px;
-  }
+  position: relative;
 }
 .home-page-container .home-page .image-container .image {
   overflow: hidden;
   line-height: 0;
+}
+@media (min-width: 1250px) {
+  .home-page-container .home-page .image-container .image {
+    position: fixed;
+    top: 0;
+    max-width: 800px;
+  }
 }
 .home-page-container .home-page .image-container .image img {
   width: 100%;
