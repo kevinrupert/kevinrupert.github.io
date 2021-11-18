@@ -811,9 +811,11 @@ ul {
         margin-right: 8px;
         margin-bottom: 8px;
         position: relative;
-        display: inline-block;
+        display: block;
+        width: fit-content;
         @include breakpoint(medium-screen-up) {
           margin: 0 32px 16px 0;
+          display: inline-block;
         }
         &:before {
           display: inline-block;
