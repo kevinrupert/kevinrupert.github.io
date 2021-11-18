@@ -165,6 +165,11 @@ body {
     &:hover {
       border-bottom: 2px solid rgba($yellow, 1);
     }
+    &.solana {
+      &:hover {
+        border-bottom: 2px solid rgba(#00FFBD, 1);
+      }
+    }
   }
 }
 

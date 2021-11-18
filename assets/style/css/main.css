@@ -194,6 +194,9 @@ body ::selection {
 .paragraph a:hover {
   border-bottom: 2px solid #fff84b;
 }
+.paragraph a.solana:hover {
+  border-bottom: 2px solid #00ffbd;
+}
 
 .label {
   font-family: "MD IO", "Helvetica", "Roboto", "Arial", sans-serif;
