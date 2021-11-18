@@ -117,6 +117,9 @@ body {
   font-size: 64px;
   line-height: 0.9;
   @include breakpoint(large-screen-up) {
+    font-size: 220px;
+  }
+  @include breakpoint(extra-large-screen-up) {
     font-size: 248px;
   }
 }

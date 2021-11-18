@@ -136,6 +136,11 @@ body ::selection {
 }
 @media (min-width: 1000px) {
   .title-1 {
+    font-size: 220px;
+  }
+}
+@media (min-width: 2000px) {
+  .title-1 {
     font-size: 248px;
   }
 }
