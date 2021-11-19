@@ -242,13 +242,18 @@ ul.bullets li::before {
   width: 100%;
   height: 100%;
 }
-.logo a img {
+.logo a img, .logo a svg {
   width: 100px;
+  height: auto;
 }
 @media (min-width: 1000px) {
-  .logo a img {
+  .logo a img, .logo a svg {
     width: 160px;
   }
+}
+.logo a img.dark path, .logo a svg.dark path {
+  transition: all 0.3s ease;
+  fill: #0d0d0d;
 }
 
 .online {
