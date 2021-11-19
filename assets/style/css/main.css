@@ -243,7 +243,7 @@ ul.bullets li::before {
   height: 100%;
 }
 .logo a img {
-  width: 120px;
+  width: 100px;
 }
 @media (min-width: 1000px) {
   .logo a img {
