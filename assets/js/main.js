@@ -1,3 +1,3 @@
 $('.fitt-project').waypoint(function() {
   $('.fitt-logo').toggleClass('dark');
-}, {offset: '0' });
+}, {offset: '-100%' });
