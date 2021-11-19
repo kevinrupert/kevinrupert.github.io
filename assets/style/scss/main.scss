@@ -230,9 +230,11 @@ ul {
       @include breakpoint(large-screen-up) {
         width: 160px;
       }
+      path {
+        transition: all 0.3s ease;
+      }
       &.dark {
         path {
-          transition: all 0.3s ease;
           fill: $black;
         }
       }

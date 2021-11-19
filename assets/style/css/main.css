@@ -251,8 +251,10 @@ ul.bullets li::before {
     width: 160px;
   }
 }
-.logo a img.dark path, .logo a svg.dark path {
+.logo a img path, .logo a svg path {
   transition: all 0.3s ease;
+}
+.logo a img.dark path, .logo a svg.dark path {
   fill: #0d0d0d;
 }
 
