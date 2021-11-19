@@ -257,6 +257,11 @@ ul.bullets li::before {
 .logo a img.dark path, .logo a svg.dark path {
   fill: #0d0d0d;
 }
+@media (min-width: 2000px) {
+  .logo a img.dark path, .logo a svg.dark path {
+    fill: #FFF84B;
+  }
+}
 
 .online {
   display: none;

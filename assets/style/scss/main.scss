@@ -236,6 +236,9 @@ ul {
       &.dark {
         path {
           fill: $black;
+          @include breakpoint(extra-large-screen-up) {
+            fill: $yellow;
+          }
         }
       }
     }
