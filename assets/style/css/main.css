@@ -262,6 +262,18 @@ ul.bullets li::before {
     fill: #FFF84B;
   }
 }
+@media (min-width: 1000px) {
+  .logo.home-page {
+    left: initial;
+    right: 24px;
+  }
+}
+@media (min-width: 2000px) {
+  .logo.home-page {
+    left: 24px;
+    right: initial;
+  }
+}
 
 .online {
   display: none;
@@ -629,11 +641,17 @@ ul.bullets li::before {
 .home-page-container {
   margin-top: 120px;
 }
+@media (min-width: 1000px) {
+  .home-page-container {
+    margin-top: 0;
+  }
+}
 @media (min-width: 2000px) {
   .home-page-container {
     display: grid;
     gap: 0;
     grid-template-columns: 1fr 1fr;
+    margin-top: 120px;
   }
 }
 .home-page-container .intro {
