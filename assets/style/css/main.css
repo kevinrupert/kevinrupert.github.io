@@ -643,6 +643,9 @@ ul.bullets li::before {
   padding: 32px;
   box-sizing: border-box;
 }
+.home-page-container .intro .title-1 {
+  line-height: 0.84;
+}
 .home-page-container .intro .title-3 {
   color: #FFF84B;
   line-height: 1.4;
