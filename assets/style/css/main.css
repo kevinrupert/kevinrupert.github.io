@@ -710,12 +710,16 @@ ul.bullets li::before {
 @media (min-width: 1000px) {
   .home-page-container .info .section-divider {
     padding: 96px;
+    padding-top: 0;
     padding-bottom: 0;
   }
 }
 @media (min-width: 2000px) {
   .home-page-container .info .section-divider {
     padding-left: 0;
+  }
+  .home-page-container .info .section-divider:first-child {
+    padding-top: 96px;
   }
 }
 .home-page-container .info .section-divider .rule {

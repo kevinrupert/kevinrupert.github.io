@@ -679,11 +679,14 @@ ul {
       // color: $yellow;
       @include breakpoint(large-screen-up) {
         padding: $section-padding-large;
-        // padding-top: 0;
+        padding-top: 0;
         padding-bottom: 0;
       }
       @include breakpoint(extra-large-screen-up) {
         padding-left: 0;
+        &:first-child {
+          padding-top: $section-padding-large;
+        }
       }
       .rule {
         background: $white;
