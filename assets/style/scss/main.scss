@@ -639,6 +639,7 @@ ul {
         position: absolute;
         right: -40px;
         bottom: 20px;
+        transform: rotate(10deg);
         @include breakpoint(large-screen-up) {
           display: block;
           width: 224px;

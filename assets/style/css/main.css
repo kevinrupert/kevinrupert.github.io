@@ -668,6 +668,7 @@ ul.bullets li::before {
   position: absolute;
   right: -40px;
   bottom: 20px;
+  transform: rotate(10deg);
 }
 @media (min-width: 1000px) {
   .home-page-container .title-container .screen .intro-logo {
