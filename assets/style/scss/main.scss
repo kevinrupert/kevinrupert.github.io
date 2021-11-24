@@ -615,6 +615,7 @@ ul {
     // margin-top: 120px;
   }
   .intro {
+    overflow: hidden;
     .title-1 {
       line-height: 0.84;
     }
@@ -627,6 +628,28 @@ ul {
     box-sizing: border-box;
     @include breakpoint(large-screen-up) {
       padding: $section-padding-large;
+    }
+  }
+  .title-container {
+    position: relative;
+    .screen {
+      position: relative;
+      .intro-logo {
+        width: 64px;
+        position: absolute;
+        right: -40px;
+        bottom: 20px;
+        @include breakpoint(large-screen-up) {
+          display: block;
+          width: 224px;
+          position: absolute;
+          right: -150px;
+          bottom: 72px;
+          border-radius: 100%;
+          box-shadow: 0px 60px 120px -60px rgba(0, 0, 0, 0.6);
+          opacity: 0.95;
+        }
+      }
     }
   }
   .about-container {
