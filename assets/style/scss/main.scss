@@ -632,13 +632,17 @@ ul {
   }
   .title-container {
     position: relative;
+    max-width: 400px;
+    @include breakpoint(large-screen-up) {
+      max-width: none;
+    }
     .screen {
       position: relative;
       .intro-logo {
-        width: 64px;
+        width: 96px;
         position: absolute;
-        right: -40px;
-        bottom: 20px;
+        right: -72px;
+        bottom: 16px;
         transform: rotate(10deg);
         @include breakpoint(large-screen-up) {
           display: block;

@@ -659,15 +659,21 @@ ul.bullets li::before {
 }
 .home-page-container .title-container {
   position: relative;
+  max-width: 400px;
+}
+@media (min-width: 1000px) {
+  .home-page-container .title-container {
+    max-width: none;
+  }
 }
 .home-page-container .title-container .screen {
   position: relative;
 }
 .home-page-container .title-container .screen .intro-logo {
-  width: 64px;
+  width: 96px;
   position: absolute;
-  right: -40px;
-  bottom: 20px;
+  right: -72px;
+  bottom: 16px;
   transform: rotate(10deg);
 }
 @media (min-width: 1000px) {
