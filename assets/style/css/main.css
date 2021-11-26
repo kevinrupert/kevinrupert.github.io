@@ -940,8 +940,8 @@ ul.bullets li::before {
   display: inline-block;
   content: "";
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   background: rgba(255, 248, 75, 0.9);
   border-radius: 100%;
 }
