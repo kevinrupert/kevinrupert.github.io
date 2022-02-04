@@ -315,6 +315,14 @@ ul {
       background: #00B5EC;
       color: $black;
     }
+    a {
+      color: $black;
+      border-bottom: 2px solid rgba($black, 0.2);
+      transition: all 0.3s ease;
+      &:hover {
+        border-bottom: 2px solid rgba(#00B5EC, 1);
+      }
+    }
     .project-hero-container {
       color: $yellow;
       .year {

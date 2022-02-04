@@ -326,6 +326,14 @@ ul.bullets li::before {
   background: #00B5EC;
   color: #0d0d0d;
 }
+.project-page-container.fitt a {
+  color: #0d0d0d;
+  border-bottom: 2px solid rgba(13, 13, 13, 0.2);
+  transition: all 0.3s ease;
+}
+.project-page-container.fitt a:hover {
+  border-bottom: 2px solid #00b5ec;
+}
 .project-page-container.fitt .project-hero-container {
   color: #FFF84B;
 }
