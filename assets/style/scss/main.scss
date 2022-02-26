@@ -950,6 +950,10 @@ ul {
       @include breakpoint(extra-large-screen-up) {
         padding-left: 0;
       }
+      .copyright {
+        font-style: italic;
+        color: $yellow;
+      }
       .keys {
         @include breakpoint(large-screen-up) {
           display: flex;

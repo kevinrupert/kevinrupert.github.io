@@ -995,6 +995,10 @@ ul.bullets li::before {
     padding-left: 0;
   }
 }
+.home-page-container .info .client-key .copyright {
+  font-style: italic;
+  color: #FFF84B;
+}
 @media (min-width: 1000px) {
   .home-page-container .info .client-key .keys {
     display: flex;
