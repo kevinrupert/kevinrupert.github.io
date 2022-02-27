@@ -654,6 +654,12 @@ ul.bullets li::before {
 }
 .home-page-container .intro .title-1 {
   line-height: 0.84;
+  font-size: 84px;
+}
+@media (min-width: 1000px) {
+  .home-page-container .intro .title-1 {
+    font-size: 220px;
+  }
 }
 @media (min-width: 2400px) {
   .home-page-container .intro .title-1 {
@@ -674,7 +680,7 @@ ul.bullets li::before {
   position: relative;
   max-width: 400px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
   .home-page-container .title-container {
     max-width: none;
   }

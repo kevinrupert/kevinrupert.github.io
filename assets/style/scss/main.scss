@@ -626,6 +626,10 @@ ul {
     overflow: hidden;
     .title-1 {
       line-height: 0.84;
+      font-size: 84px;
+      @include breakpoint(large-screen-up) {
+        font-size: 220px;
+      }
       @include breakpoint(extra-large-screen-up) {
         font-size: 13vw;
       }
@@ -644,7 +648,7 @@ ul {
   .title-container {
     position: relative;
     max-width: 400px;
-    @include breakpoint(large-screen-up) {
+    @include breakpoint(medium-screen-up) {
       max-width: none;
     }
     .screen {
