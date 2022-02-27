@@ -663,7 +663,7 @@ ul.bullets li::before {
 }
 @media (min-width: 2400px) {
   .home-page-container .intro .title-1 {
-    font-size: 13vw;
+    font-size: 12.5vw;
   }
 }
 .home-page-container .intro .title-3 {
