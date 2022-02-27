@@ -46,7 +46,7 @@
 $small-screen: 400px;
 $medium-screen: 600px;
 $large-screen: 1000px;
-$extra-large-screen: 2000px;
+$extra-large-screen: 2400px;
 
 $section-padding-small: 32px;
 $section-padding-large: 96px;
@@ -626,6 +626,9 @@ ul {
     overflow: hidden;
     .title-1 {
       line-height: 0.84;
+      @include breakpoint(extra-large-screen-up) {
+        font-size: 13vw;
+      }
     }
     .title-3 {
       color: $yellow;
@@ -661,6 +664,11 @@ ul {
           border-radius: 100%;
           box-shadow: 0px 60px 120px -60px rgba(0, 0, 0, 0.6);
           opacity: 0.95;
+        }
+        @include breakpoint(extra-large-screen-up) {
+          width: 284px;
+          right: -180px;
+          bottom: 100px;
         }
       }
     }
