@@ -340,6 +340,9 @@ ul.bullets li::before {
 .project-page-container.fitt .project-hero-container .year {
   border: 4px solid #FFF84B;
 }
+.project-page-container.fitt .project-hero-container img {
+  opacity: 0.9;
+}
 .project-page-container.fitt .project-info .title-3 {
   color: #00B5EC;
 }
@@ -413,7 +416,7 @@ ul.bullets li::before {
 @media (min-width: 1000px) {
   .section.project-hero {
     height: 100vh;
-    min-height: 860px;
+    min-height: 896px;
   }
 }
 @media (min-width: 2400px) {
@@ -433,10 +436,17 @@ ul.bullets li::before {
 }
 .section.project-hero .title-container {
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section.project-hero .title-container .title-3 {
+  max-width: 280px;
 }
 @media (min-width: 1000px) {
   .section.project-hero .title-container .title-3 {
-    margin-top: 48px;
+    margin-top: 64px;
+    max-width: none;
   }
 }
 .section.project-hero .year {
