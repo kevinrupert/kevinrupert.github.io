@@ -772,7 +772,7 @@ a {
     font-family: $pdu;
     font-size: 50vw;
     line-height: 0.8;
-    transition: all 0.5s ease;
+    transition: opacity 0.5s ease;
     @include breakpoint(medium-screen-up) {
       font-size: 40vw;
     }
