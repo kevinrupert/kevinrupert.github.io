@@ -668,7 +668,7 @@ ul.bullets li::before {
 }
 @media (min-width: 1000px) {
   .home-page-container .intro .title-1 {
-    font-size: 220px;
+    font-size: 280px;
   }
 }
 @media (min-width: 2400px) {
@@ -733,6 +733,11 @@ ul.bullets li::before {
     display: grid;
     gap: 48px;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .home-page-container .about-container .title-3 {
+    font-size: 34px;
   }
 }
 .home-page-container .about-container .paragraph {

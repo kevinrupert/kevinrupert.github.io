@@ -636,7 +636,7 @@ ul {
       line-height: 0.84;
       font-size: 84px;
       @include breakpoint(large-screen-up) {
-        font-size: 220px;
+        font-size: 280px;
       }
       @include breakpoint(extra-large-screen-up) {
         font-size: 12.5vw;
@@ -692,6 +692,11 @@ ul {
       display: grid;
       gap: 48px;
       grid-template-columns: repeat(2, 1fr);
+    }
+    .title-3 {
+      @include breakpoint(large-screen-up) {
+        font-size: 34px;
+      }
     }
     .paragraph {
       margin-bottom: 24px;
