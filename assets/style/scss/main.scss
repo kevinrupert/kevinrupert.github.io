@@ -44,9 +44,9 @@
 // Breakpoints
 
 $small-screen: 400px;
-$medium-screen: 600px;
-$large-screen: 1000px;
-$extra-large-screen: 2400px;
+$medium-screen: 800px;
+$large-screen: 1200px;
+$extra-large-screen: 1920px;
 
 $section-padding-small: 32px;
 $section-padding-large: 96px;
@@ -66,8 +66,8 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 1;
-  color: $white;
-  background: $black;
+  color: $black;
+  background: $white;
   -webkit-font-smoothing: antialiased;
   position: relative;
   ::selection {
@@ -113,92 +113,97 @@ body {
 // Design
 
 .title-1 {
-  font-family: $nudge;
-  font-size: 64px;
+  font-family: $apk;
+  font-size: 84px;
   line-height: 0.9;
-  @include breakpoint(large-screen-up) {
-    font-size: 220px;
+  letter-spacing: -2.5px;
+  @include breakpoint(medium-screen-up) {
+    font-size: 120px;
+    letter-spacing: -8px;
   }
-  @include breakpoint(extra-large-screen-up) {
-    font-size: 248px;
+  @include breakpoint (extra-large-screen-up) {
+    font-size: 360px;
+    letter-spacing: -10px;
   }
 }
 
 .title-2 {
-  font-family: $nudge;
-  font-size: 32px;
-  line-height: 1;
-  @include breakpoint(large-screen-up) {
-    font-size: 96px;
+  font-family: $apk;
+  font-size: 31.5px;
+  line-height: 35px;
+  letter-spacing: -0.4px;
+  font-weight: 500;
+  @include breakpoint(medium-screen-up) {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+  }
+  @include breakpoint (extra-large-screen-up) {
+    font-size: 49.5px;
+    line-height: 53px;
+    letter-spacing: -1px;
+  }
+  &.gray {
+    color: $gray;
   }
 }
 
 .title-3 {
-  font-family: $md;
+  font-family: $apk;
   font-size: 18px;
-  line-height: 1.2;
-  font-style: italic;
-  letter-spacing: -0.5px;
-  @include breakpoint(large-screen-up) {
-    font-size: 28px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  @include breakpoint(medium-screen-up) {
+    font-size: 22.5px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+  }
+  @include breakpoint(extra-large-screen-up) {
+    font-size: 31.5px;
+    line-height: 42px;
+    letter-spacing: -0.3px;
+  }
+  &.gray {
+    color: $gray;
   }
 }
 
 .paragraph {
-  font-family: $md;
-  font-size: 16px;
+  font-family: $apk;
+  font-size: 18px;
   line-height: 24px;
-  letter-spacing: -0.5px;
-  @include breakpoint(large-screen-up) {
-    font-size: 20px;
-    line-height: 28px;
+  letter-spacing: -0.1px;
+  @include breakpoint(medium-screen-up) {
+    font-size: 22.5px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+  }
+  @include breakpoint(extra-large-screen-up) {
+    font-size: 31.5px;
+    line-height: 42px;
+    letter-spacing: -0.3px;
   }
   span {
     font-style: italic;
   }
   a {
-    color: $white;
     text-decoration: none;
     font-style: italic;
-    border-bottom: 2px solid rgba($white, 0.2);
+    color: $black;
+    border-bottom: 2px solid rgba($black, 0.2);
     transition: all 0.3s ease;
     &:hover {
       border-bottom: 2px solid rgba($yellow, 1);
     }
-    &.solana {
-      &:hover {
-        border-bottom: 2px solid rgba(#00FFBD, 1);
-      }
-    }
-  }
-}
-
-.label {
-  font-family: $md;
-  font-size: 12px;
-  line-height: 1.4;
-  // text-transform: uppercase;
-  @include breakpoint(large-screen-up) {
-    font-size: 14px;
-  }
-}
-
-.caption {
-  padding: 12px 12px 0 12px;
-  box-sizing: border-box;
-  width: 100%;
-  .label {
-    // opacity: 0.8;
   }
 }
 
 ul {
   list-style: none;
-  // padding-left: 24px;
   li {
     margin-bottom: 12px;
     display: flex;
-    // line-height: 1.2;
     &:last-child {
       margin-bottom: 0;
     }
@@ -206,7 +211,7 @@ ul {
   &.bullets {
     li {
       &::before {
-        content: "•";
+        content: "⊹";
         color: #a8a8a8;
         margin-right: 20px;
         height: 100%;
@@ -215,824 +220,200 @@ ul {
   }
 }
 
-.logo {
-  position: fixed;
-  left: 24px;
-  top: 24px;
-  z-index: 4;
-  a {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    img, svg {
-      width: 100px;
-      height: auto;
-      @include breakpoint(large-screen-up) {
-        width: 160px;
-      }
-      path {
-        transition: all 0.3s ease;
-      }
-      &.dark {
-        path {
-          fill: $black;
-          @include breakpoint(extra-large-screen-up) {
-            fill: $yellow;
-          }
-        }
-      }
-    }
-  }
-  &.home-page {
-    // @include breakpoint(large-screen-up) {
-    //   left: initial;
-    //   right: 24px;
-    // }
-    // @include breakpoint(extra-large-screen-up) {
-    //   left: 24px;
-    //   right: initial;
-    // }
-    @include breakpoint(large-screen-up) {
-      left: $section-padding-large;
-      top: $section-padding-large;
-    }
-  }
+.caption {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
 }
 
-.online {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  // left: 0;
-  padding: 16px;
-  box-sizing: border-box;
-  // justify-content: center;
-  align-items: center;
-  @include breakpoint(large-screen-up) {
-    padding: 24px;
-    display: flex;
-  }
-  .active {
-    background: #00FFBD;
-    border-radius: 100%;
-    height: 8px;
-    width: 8px;
-    margin-right: 12px;
-    -webkit-animation: blink 1.5s infinite;
-    -moz-animation: blink 1.5s infinite;
-    -o-animation: blink 1.5s infinite;
-    animation: blink 1.5s infinite;
-  }
-  .label {
-    text-transform: uppercase;
-    line-height: 1;
-    // margin-top: 2px;
-  }
-}
-
-.project-page-container {
-  @include breakpoint(extra-large-screen-up) {
-    display: grid;
-    gap: 0;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .project-hero-container {
-    @include breakpoint(extra-large-screen-up) {
-      position: fixed;
-      width: 50%;
-    }
-  }
-  .project-info {
-    @include breakpoint(extra-large-screen-up) {
-      grid-column: 2 / 2;
-    }
-  }
-  &.fitt {
-    background: $white;
-    color: $black;
-    ::selection {
-      background: #00B5EC;
-      color: $black;
-    }
-    a {
-      color: $black;
-      border-bottom: 2px solid rgba($black, 0.2);
-      transition: all 0.3s ease;
-      &:hover {
-        border-bottom: 2px solid rgba(#00B5EC, 1);
-      }
-    }
-    .project-hero-container {
-      color: $yellow;
-      .year {
-        border: 4px solid $yellow;
-      }
-      img {
-        opacity: 0.9;
-      }
-    }
-    .project-info {
-      .title-3 {
-        color: #00B5EC;
-      }
-      .label {
-        color: #a8a8a8;
-      }
-      .grid {
-        &.formats {
-          display: flex;
-          justify-content: center;
-          .grid-container {
-            grid-template-columns: 1fr 1fr;
-            max-width: 680px;
-          }
-        }
-        img, video {
-          box-shadow: 0px 0px 0px 8px #f9f9f9;
-          @include breakpoint(large-screen-up) {
-            box-shadow: 0px 0px 0px 16px #f9f9f9;
-          }
-        }
-      }
-    }
-  }
-  &.solana {
-    ::selection {
-      background: #00FFBD;
-      color: $black;
-    }
-    .project-hero-container {
-      color: #00FFBD;
-      .year {
-        border: 4px solid #00FFBD;
-      }
-    }
-    .project-info {
-      .title-3 {
-        color: #00FFBD;
-      }
-      .label {
-        color: #a8a8a8;
-      }
-      .grid {
-        img, video {
-          box-shadow: 0px 0px 0px 8px #000000;
-          @include breakpoint(large-screen-up) {
-            box-shadow: 0px 0px 0px 16px #000000;
-          }
-        }
-      }
-      .inline-image {
-        img, video {
-          margin-bottom: 8px;
-          box-shadow: 0px 0px 0px 8px #000000;
-          @include breakpoint(large-screen-up) {
-            margin-bottom: 16px;
-            box-shadow: 0px 0px 0px 16px #000000;
-          }
-        }
-      }
-    }
-  }
-}
-
-.section {
-  &.project-hero {
-    background: #000000;
-    height: 520px;
-    padding: 32px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    @include breakpoint(large-screen-up) {
-      height: 100vh;
-      min-height: 896px;
-    }
-    @include breakpoint(extra-large-screen-up) {
-      grid-column: 1 / 1;
-      width: 100%;
-    }
-    .title-1 {
-      margin-bottom: 24px;
-    }
-    img {
-      width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      position: absolute;
-    }
-    .title-container {
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .title-3 {
-        max-width: 280px;
-        @include breakpoint(large-screen-up) {
-          margin-top: 64px;
-          max-width: none;
-        }
-      }
-    }
-    .year {
-      position: absolute;
-      bottom: 32px;
-      border: 4px solid $white;
-      padding: 0 24px;
-      height: 52px;
-      display: flex;
-      align-items: center;
-      border-radius: 52px;
-      box-sizing: border-box;
-      .title-3 {
-        line-height: 1;
-        font-style: normal;
-      }
+.content-container {
+  .section {
+    &.hero {
+      padding-top: 60px;
       @include breakpoint(large-screen-up) {
-        height: 60px;
-        border-radius: 60px;
-      }
-    }
-  }
-  &.text {
-    padding: $section-padding-small;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @include breakpoint(large-screen-up) {
-      padding: $section-padding-large;
-    }
-    &.first {
-      padding-top: calc($section-padding-small * 2);
-      @include breakpoint(large-screen-up) {
-        padding-top: calc($section-padding-large * 2);
-      }
-    }
-    &.last {
-      padding-bottom: calc($section-padding-small * 2);
-      @include breakpoint(large-screen-up) {
-        padding-bottom: calc($section-padding-large * 2);
-      }
-    }
-    .paragraph, .title-3 {
-      margin-bottom: 24px;
-      max-width: 620px;
-      width: 100%;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      &.mar-bot-48 {
-        margin-bottom: 48px;
-      }
-    }
-
-    .title-3 {
-      margin-bottom: 8px;
-      max-width: 620px;
-      width: 100%;
-    }
-
-    .title-2 {
-      max-width: 620px;
-      width: 100%;
-      margin-bottom: 48px;
-    }
-
-  }
-  &.title {
-    padding: $section-padding-small;
-    box-sizing: border-box;
-    @include breakpoint(large-screen-up) {
-      padding: $section-padding-large;
-    }
-  }
-  &.full-width-image {
-    img {
-      width: 100%;
-      display: block;
-    }
-    .caption {
-      @include breakpoint(large-screen-up) {
-        padding-left: 24px;
-      }
-    }
-  }
-  &.inline-image {
-    padding: $section-padding-small;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    @include breakpoint(large-screen-up) {
-      padding: $section-padding-large;
-    }
-    &.middle {
-      padding-top: 0;
-    }
-    &.first {
-      padding-top: calc($section-padding-small * 2);
-      @include breakpoint(large-screen-up) {
-        padding-top: calc($section-padding-large * 2);
-      }
-    }
-    &.last {
-      padding-bottom: calc($section-padding-small * 2);
-      @include breakpoint(large-screen-up) {
-        padding-bottom: calc($section-padding-large * 2);
-      }
-    }
-    img {
-      width: 100%;
-      max-width: 1020px;
-      border-radius: 4px;
-      @include breakpoint(large-screen-up) {
-        border-radius: 16px;
-      }
-    }
-    .caption {
-      padding-left: 0;
-      max-width: 1020px;
-    }
-  }
-  &.grid {
-    padding: $section-padding-small;
-    box-sizing: border-box;
-    @include breakpoint(large-screen-up) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: $section-padding-large;
-    }
-    &.middle {
-      padding-top: 0;
-    }
-    &.first {
-      padding-top: calc($section-padding-small * 2);
-      @include breakpoint(large-screen-up) {
-        padding-top: calc($section-padding-large * 2);
-      }
-    }
-    &.last {
-      padding-bottom: calc($section-padding-small * 2);
-      @include breakpoint(large-screen-up) {
-        padding-bottom: calc($section-padding-large * 2);
-      }
-    }
-    .grid-container {
-      display: grid;
-      gap: 32px;
-      grid-template-columns: repeat(3, 1fr);
-      @include breakpoint(large-screen-up) {
-        display: grid;
-        gap: 48px;
-        max-width: 1020px;
-      }
-    }
-    .image {
-      line-height: 0;
-      margin-bottom: 24px;
-      // border-radius: 16px;
-      @include breakpoint(large-screen-up) {
-        margin-bottom: 0;
-      }
-      &:last-child {
-        margin-bottom: 0;
-      }
-      .caption {
-        padding-left: 0;
-      }
-      img, video {
-        width: 100%;
-        border-radius: 4px;
-        @include breakpoint(large-screen-up) {
-          border-radius: 16px;
-        }
-      }
-    }
-  }
-}
-
-.home-page-container {
-  // margin-top: 120px;
-  @include breakpoint(large-screen-up) {
-    // margin-top: calc($section-padding-large + 64px);
-  }
-  @include breakpoint(extra-large-screen-up) {
-    display: grid;
-    gap: 0;
-    grid-template-columns: 1fr 1fr;
-    // margin-top: 120px;
-  }
-  .intro {
-    overflow: hidden;
-    .title-1 {
-      line-height: 0.84;
-      font-size: 84px;
-      @include breakpoint(large-screen-up) {
-        font-size: 280px;
+        padding-top: 120px;
       }
       @include breakpoint(extra-large-screen-up) {
-        font-size: 12.5vw;
+        padding-top: 180px;
       }
-    }
-    .title-3 {
-      color: $yellow;
-      line-height: 1.4;
-      margin-bottom: 24px;
-    }
-    padding: $section-padding-small;
-    box-sizing: border-box;
-    @include breakpoint(large-screen-up) {
-      padding: $section-padding-large;
-    }
-  }
-  .title-container {
-    position: relative;
-    max-width: 400px;
-    @include breakpoint(medium-screen-up) {
-      max-width: none;
-    }
-    .screen {
-      position: relative;
-      .intro-logo {
-        width: 96px;
-        position: absolute;
-        right: -72px;
-        bottom: 16px;
-        transform: rotate(10deg);
+      .text {
+        padding: 60px 24px;
+        display: grid;
+        gap: 36px;
+        @include breakpoint(medium-screen-up) {
+          padding: 60px;
+        }
         @include breakpoint(large-screen-up) {
-          display: block;
-          width: 224px;
-          position: absolute;
-          right: -150px;
-          bottom: 72px;
-          border-radius: 100%;
-          box-shadow: 0px 60px 120px -60px rgba(0, 0, 0, 0.6);
-          opacity: 0.95;
+          grid-template-columns: repeat(16, 1fr);
+          gap: 20px;
+          padding: 120px 60px;
         }
         @include breakpoint(extra-large-screen-up) {
-          width: 284px;
-          right: -180px;
-          bottom: 100px;
+          padding: 180px;
         }
-      }
-    }
-  }
-  .about-container {
-    margin-top: 24px;
-    @include breakpoint(large-screen-up) {
-      margin-top: $section-padding-large;
-      display: grid;
-      gap: 48px;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .title-3 {
-      @include breakpoint(large-screen-up) {
-        font-size: 34px;
-      }
-    }
-    .paragraph {
-      margin-bottom: 24px;
-      &.last {
-        margin-bottom: 0;
-      }
-    }
-    .end {
-      color: $yellow;
-    }
-  }
-  .info {
-    .section-divider {
-      padding: $section-padding-small;
-      padding-top: 0;
-      padding-bottom: 0;
-      box-sizing: border-box;
-      // color: $yellow;
-      @include breakpoint(large-screen-up) {
-        padding: $section-padding-large;
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-      @include breakpoint(extra-large-screen-up) {
-        padding-left: 0;
-        &:first-child {
-          padding-top: $section-padding-large;
-        }
-      }
-      .rule {
-        background: $white;
-        height: 2px;
-        width: 100%;
-        margin-bottom: 16px;
-      }
-    }
-    .grid-container {
-      padding: $section-padding-small;
-      @include breakpoint(large-screen-up) {
-        padding: $section-padding-large;
-        display: grid;
-        gap: 48px;
-        grid-template-columns: 1fr 1fr;
-      }
-      @include breakpoint(extra-large-screen-up) {
-        padding-left: 0;
-      }
-      a {
-        text-decoration: none;
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        &:hover {
-          .project {
-            @include breakpoint(large-screen-up) {
-              transform: translateY(-24px); 
-            }
-            &.solana {
-              .year {
-                background: #00FFBD;
-                color: $black;
-              }
-              .arrow {
-                background: #00FFBD;
-                svg {
-                  path {
-                    stroke: $black;
-                  }
-                }
-              }
-            }
-            &.fitt {
-              .year {
-                background: $yellow;
-                color: $black;
-              }
-              .arrow {
-                background: $yellow;
-                svg {
-                  path {
-                    stroke: $black;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      .project {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        // height: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 16px;
-        margin-bottom: 16px;
-        padding: 48px;
-        box-sizing: border-box;
-        @include aspect-ratio(2, 3);
-        transition: all 0.3s ease;
-        @include breakpoint(large-screen-up) {
-          // height: 800px;
-          margin-bottom: 0;
-        }
-        &.solana {
-          color: #00FFBD;
-          .year {
-            border: 4px solid #00FFBD;
-          }
-          .arrow {
-            border: 4px solid #00FFBD;
-            svg {
-              path {
-                transition: all 0.3s ease;
-                stroke: #00FFBD;
-              }
-            }
-          }
-        }
-        &.fitt {
-          color: $yellow;
-          .year {
-            border: 4px solid $yellow;
-          }
-          .arrow {
-            border: 4px solid $yellow;
-            svg {
-              path {
-                transition: all 0.3s ease;
-                stroke: $yellow;
-              }
-            }
-          }
-        }
-        .title-container {
-          z-index: 2;
-          position: absolute;
-          text-align: center;
-          left: 48px;
-          right: 48px;
-          .title-2 {
-            font-size: 64px;
-            @include breakpoint(large-screen-up) {
-              font-size: 96px;
-            }
-          }
-        }
-        .arrow {
-          position: absolute;
-          top: 24px;
-          right: 24px;
-          border-radius: 100%;
-          height: 52px;
-          width: 52px;
-          border: 4px solid $white;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.3s ease;
-        }
-        .year {
-          transition: all 0.3s ease;
-          position: absolute;
-          bottom: 32px;
-          border: 4px solid $white;
-          padding: 0 24px;
-          height: 52px;
-          display: flex;
-          align-items: center;
-          border-radius: 52px;
-          box-sizing: border-box;
-          .title-3 {
-            line-height: 1;
-            font-style: normal;
-          }
+        .section-number {
           @include breakpoint(large-screen-up) {
-            height: 60px;
-            border-radius: 60px;
+            grid-column: 4 / span 3;
           }
+        }
+        .section-title {
+          @include breakpoint(large-screen-up) {
+            grid-column: 7 / span 9;
+          }
+        }
+      }
+      .image {
+        @include breakpoint(large-screen-up) {
+          display: grid;
+          grid-template-columns: repeat(16, 1fr);
+          gap: 20px;
+          padding: 0 60px;
+        }
+        @include breakpoint(extra-large-screen-up) {
+          padding: 0 180px;
         }
         img {
           width: 100%;
-          min-height: 100%;
-          object-fit: cover;
-          position: absolute;
-        }
-      }
-    }
-    .clients {
-      padding: $section-padding-small;
-      box-sizing: border-box;
-      width: 100%;
-      // display: flex;
-      // flex-direction: column;
-      @include breakpoint(large-screen-up) {
-        padding: $section-padding-large;
-        display: flex;
-        flex-wrap: wrap; 
-        flex-direction: initial;
-      }
-      @include breakpoint(extra-large-screen-up) {
-        padding-left: 0;
-      }
-      .title-2 {
-        text-transform: uppercase;
-        font-size: 64px;
-        @include breakpoint(large-screen-up) {
-          font-size: 96px;
-        }
-      }
-      .client {
-        margin-right: 8px;
-        margin-bottom: 8px;
-        position: relative;
-        display: block;
-        width: fit-content;
-        @include breakpoint(medium-screen-up) {
-          margin: 0 32px 16px 0;
-          display: inline-block;
-        }
-        &:before {
-          display: inline-block;
-          content: "";
-          position: absolute;
-          width: 32px;
-          height: 32px;
-          background: rgba($yellow, 0.9);
-          border-radius: 100%;
           @include breakpoint(large-screen-up) {
-            height: 48px;
-            width: 48px;
-          }
-        }
-        &.top-right {
-          &:before {
-            right: 0;
-          }
-        }
-        &.bottom-right {
-          &:before {
-            bottom: 0;
-            right: 0;
-          }
-        }
-        &.bottom-left {
-          &:before {
-            bottom: 0;
-            left: 0;
-          }
-        }
-        &.deeplocal {
-          &:before {
-            background: rgba(#FF4040, 0.9)
-          }
-        }
-        &.maya {
-          &:before {
-            background: rgba(#3CA1FF, 0.9)
+            grid-column: 4 / span 12;
           }
         }
       }
     }
-    .client-key {
-      padding: $section-padding-small;
-      box-sizing: border-box;
-      padding-top: 0;
+    &.text {
+      padding: 60px 24px;
+      display: grid;
+      gap: 60px;
+      @include breakpoint(medium-screen-up) {
+        padding: 60px;
+      }
       @include breakpoint(large-screen-up) {
-        padding: $section-padding-large;
-        padding-top: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        padding: 120px 60px;
+        gap: 120px;
       }
       @include breakpoint(extra-large-screen-up) {
-        padding-left: 0;
+        padding: 180px;
+        gap: 180px;
       }
-      .copyright {
-        font-style: italic;
-        color: $yellow;
+      &.bottom {
+        padding-bottom: 0;
       }
-      .keys {
-        @include breakpoint(large-screen-up) {
-          display: flex;
+      .text-section {
+        display: grid;
+        gap: 36px;
+        @include breakpoint(extra-large-screen-up) {
+          gap: 60px;
         }
-        .key {
-          display: flex;
-          align-items: center;
-          margin-bottom: 16px;
+        .text-block {
+          display: grid;
+          gap: 24px;
           @include breakpoint(large-screen-up) {
-            margin-bottom: 0;
-            margin-right: 24px;
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            column-gap: 20px;
+            row-gap: 36px;
           }
-          .color {
-            background: $yellow;
-            height: 8px;
-            width: 8px;
-            border-radius: 100%;
-            margin-right: 12px;
-            &.deeplocal {
-             background: #FF4040; 
+          @include breakpoint(extra-large-screen-up) {
+            row-gap: 60px;
+          }
+          .paragraph-block {
+            display: grid;
+            gap: 12px;
+            @include breakpoint(large-screen-up) {
+              grid-column: 7 / span 9;
             }
-            &.maya {
-              background: #3CA1FF; 
-             }
+            @include breakpoint(extra-large-screen-up) {
+              grid-column: 7 / span 8;
+            }
           }
-          .label {
-            text-transform: uppercase;
+        }
+      }
+    }
+    &.grid {
+      display: grid;
+      @include breakpoint(medium-screen-up) {
+        padding: 0 60px;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 20px;
+      }
+      @include breakpoint(large-screen-up) {
+        grid-template-columns: repeat(16, 1fr);
+      }
+      @include breakpoint(extra-large-screen-up) {
+        padding: 0 180px;
+      }
+      .grid-container {
+        display: grid;
+        gap: 12px;
+        @include breakpoint(medium-screen-up) {
+          grid-column: 1 / span 9;
+          grid-template-columns: repeat(8, 1fr);
+          gap: 20px;
+        }
+        @include breakpoint(large-screen-up) {
+          grid-column: 4 / span 12;
+          grid-template-columns: repeat(12, 1fr);
+          gap: 20px;
+        }
+        .grid-item {
+          &.phone-screen {
+            background: #FAFAFA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 40px;
+            img, video {
+              width: 100%;
+              max-width: 320px;
+              box-shadow: 0 24px 34px -12px rgba(0, 0, 0, 0.08);
+              @include breakpoint(extra-large-screen-up) {
+                max-width: 360px;
+              }
+            }
+            @include breakpoint(extra-large-screen-up) {
+              padding: 96px 40px;
+            }
+          }
+          &.screen {
+            background: #FAFAFA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 40px;
+            img, video {
+              width: 100%;
+              max-width: 1200px;
+            }
+            @include breakpoint(extra-large-screen-up) {
+              padding: 96px 40px;
+            }
+          }
+          &.full {
+            @include breakpoint(medium-screen-up) {
+              grid-column: span 8;
+            }
+            @include breakpoint(large-screen-up) {
+              grid-column: span 12;
+            }
+          }
+          &.half {
+            @include breakpoint(medium-screen-up) {
+              grid-column: span 4;
+            }
+            @include breakpoint(large-screen-up) {
+              grid-column: span 6;
+            }
+          }
+          &.third {
+            @include breakpoint(medium-screen-up) {
+              grid-column: span 4;
+            }
           }
         }
       }
     }
   }
 }
-
-
-@-webkit-keyframes blink {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
-@-moz-keyframes blink {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
-@-o-keyframes blink {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
-@keyframes blink {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
-
-
-
 
 
 
