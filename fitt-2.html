@@ -16,10 +16,24 @@
     <link href="assets/imgs/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
     <link href="assets/style/css/main.css" media="all" rel="stylesheet">
   </head>
-  <body>
+  <body class="dark">
+
+    <div class="project-hero">
+      <div id="logo"></div>
+      <div class="text-container fitt">
+          <h1 class="title-1 text-1">The</h1>
+          <h1 class="title-1 text-2">New</h1>
+          <!-- <h1 class="title-1 text-2"><div id="one"></div></h1> -->
+          <h1 class="title-1 text-3">Fitt</h1>
+          <h1 class="title-1 text-4">City</h1>
+      </div>
+    </div>
 
     <div class="content-container">
       <div class="section hero">
+        <div class="image">
+          <img srcset="assets/imgs/projects/fitt/page-hero-600w.jpg 600w, assets/imgs/projects/fitt/page-hero-1200w.jpg 1200w, assets/imgs/projects/fitt/page-hero-2400w.jpg 2400w" src="assets/imgs/projects/fitt/page-hero-2400w.jpg" />
+        </div>
         <div class="text">
           <div class="section-number">
             <h2 class="title-2 gray">00</h2>
@@ -28,11 +42,8 @@
             <h2 class="title-2">Where we started</h2>
           </div>
         </div>
-        <div class="image">
-          <img srcset="assets/imgs/projects/fitt/page-hero-600w.jpg 600w, assets/imgs/projects/fitt/page-hero-1200w.jpg 1200w, assets/imgs/projects/fitt/page-hero-2400w.jpg 2400w" src="assets/imgs/projects/fitt/page-hero-2400w.jpg" />
-        </div>
       </div>
-      <div class="section text bottom">
+      <div class="section text top bottom">
         <div class="text-section">
           <div class="text-block">
             <div class="paragraph-block">
@@ -117,7 +128,7 @@
             </div>
             <div class="paragraph-block">
               <h3 class="title-3 gray">News</h3>
-              <p class="paragraph">News was bite-sized editorial snippets inspired by our weekly email newsletter. I still think the format is interesting, but it never really clicked in the product context.</p>
+              <p class="paragraph">News was bite-sized editorial snippets inspired by our weekly email newsletter. The format was interesting, but it never really clicked in the product context.</p>
             </div>
           </div>
         </div>
@@ -367,6 +378,8 @@
 
     <script media="all" src="assets/js/jquery-3.2.1.min.js"></script>
     <script media="all" src="assets/js/jquery.waypoints.min.js"></script>
+    <script media="all" src="assets/js/blotter.min.js"></script>
+    <script media="all" src="assets/js/rollingDistortMaterial.js"></script>
     <script media="all" src="assets/js/main.js"></script>
   </body>
 </html>
