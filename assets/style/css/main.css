@@ -339,6 +339,7 @@ ul.bullets li::before {
   align-items: center;
   justify-content: space-between;
   padding: 24px;
+  font-variant-numeric: slashed-zero;
 }
 @media (min-width: 2400px) {
   .home-page .timeline-grid .grid-item .details {
@@ -401,7 +402,7 @@ ul.bullets li::before {
   }
   .project-hero .text-container.fitt .text-1 {
     grid-row: 1;
-    grid-column: 2/6;
+    grid-column: 1/6;
   }
   .project-hero .text-container.fitt .text-2 {
     grid-row: 1;

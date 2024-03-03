@@ -291,6 +291,7 @@ ul {
         align-items: center;
         justify-content: space-between;
         padding: 24px;
+        font-variant-numeric: slashed-zero;
         @include breakpoint(extra-large-screen-up) {
           padding: 40px;
         }
@@ -349,7 +350,7 @@ ul {
       &.fitt {
         .text-1 {
           grid-row: 1;
-          grid-column: 2 / 6;
+          grid-column: 1 / 6;
         }
         .text-2 {
           grid-row: 1;
