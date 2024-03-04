@@ -328,6 +328,48 @@ ul.bullets li::before {
     grid-column: 7/12;
   }
 }
+.home-page .timeline-grid .grid-item.link {
+  background: #0d0d0d;
+  color: #ffffff;
+}
+.home-page .timeline-grid .grid-item.link a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.home-page .timeline-grid .grid-item.link::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0;
+  border-color: #000000 #FFF;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  height: 0px;
+  width: 0px;
+  display: block;
+  transition: all 0.4s ease;
+}
+@media (min-width: 800px) {
+  .home-page .timeline-grid .grid-item.link::after {
+    border-width: 0px 40px 40px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .home-page .timeline-grid .grid-item.link::after {
+    border-width: 0px 60px 60px 0px;
+  }
+}
+@media (min-width: 2400px) {
+  .home-page .timeline-grid .grid-item.link::after {
+    border-width: 0px 80px 80px 0px;
+  }
+}
+.home-page .timeline-grid .grid-item.link:hover .logo img {
+  transform: scale(1.12);
+}
+.home-page .timeline-grid .grid-item.link:hover::after {
+  border-width: 0px 0px 0px 0px;
+}
 .home-page .timeline-grid .grid-item .details {
   position: absolute;
   left: 0;
@@ -356,8 +398,13 @@ ul.bullets li::before {
   width: 100%;
 }
 .home-page .timeline-grid .grid-item .details .logo img {
-  width: 55%;
-  max-width: 300px;
+  transition: all 0.4s ease;
+  width: 75%;
+}
+@media (min-width: 1200px) {
+  .home-page .timeline-grid .grid-item .details .logo img {
+    width: 60%;
+  }
 }
 .home-page .timeline-grid .grid-item .details .info {
   width: 100%;
@@ -414,7 +461,7 @@ ul.bullets li::before {
   }
   .project-hero .text-container.fitt .text-4 {
     grid-row: 3;
-    grid-column: 8/16;
+    grid-column: 8/17;
     text-align: right;
   }
 }
