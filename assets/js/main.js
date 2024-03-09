@@ -7,6 +7,12 @@ var [block1, block2, block3, block4, block5, block6, block7, block8, block9, blo
 var	characters = '░█▓ ▒ W█';
 var speed = '50';
 
+$('.block-1-text, .block-2-text, .block-3-text, .block-4-text, .block-5-text, .block-6-text, .block-7-text, .block-8-text, .block-9-text, .block-10-text, .block-11-text').hide();
+
+setTimeout(function() {
+  $('.block-1-text, .block-2-text, .block-3-text, .block-4-text, .block-5-text, .block-6-text, .block-7-text, .block-8-text, .block-9-text, .block-10-text, .block-11-text' ).show();
+}, 50);
+
 [block1, block2, block3, block4, block5, block6, block7, block8, block9, block10, block11].forEach(block => {
   block.start().set({
     characters: characters,
@@ -21,5 +27,42 @@ var speed = '50';
   }, {offset: 'bottom-in-view' });
 });
 
+var project = baffle('.project-text', {
+  characters: '░█▓ ▒ W█',
+  speed: 50
+})
 
+var logo = baffle('.logo-text', {
+  characters: '░█▓ ▒ W█',
+  speed: 50
+})
 
+$('.project-header-details').hide();
+
+project.start();
+
+setTimeout(function() {
+  $('.project-header-details').show();
+}, 50);
+
+setTimeout(function() {
+  project.reveal(500);
+}, 100);
+
+$('.project-header-logo').hide();
+
+logo.start();
+
+setTimeout(function() {
+  $('.project-header-logo').show();
+}, 50);
+
+setTimeout(function() {
+  logo.reveal(500);
+}, 100);
+
+// $('.project-header-logo').hover(function() {
+//   logo.start();
+// }, function() {
+//   logo.reveal(500);
+// });

@@ -165,12 +165,11 @@ body {
   }
   a {
     text-decoration: none;
-    font-style: italic;
     color: $black;
     border-bottom: 2px solid rgba($black, 0.2);
     transition: all 0.3s ease;
     &:hover {
-      border-bottom: 2px solid rgba($yellow, 1);
+      border-bottom: 2px solid rgba($black, 1);
     }
   }
 }
@@ -272,10 +271,16 @@ ul {
       // @include breakpoint(extra-large-screen-up) {
       //   grid-column: span 4;
       // }
-      &.offset-item {
+      &:nth-child(even) {
+        // color: red;
         @include breakpoint(large-screen-up) {
           grid-column: 7 / 12;
         }
+      }
+      &.offset-item {
+        // @include breakpoint(large-screen-up) {
+        //   grid-column: 7 / 12;
+        // }
         // @include breakpoint(extra-large-screen-up) {
         //   grid-column: 8 / 12;
         // }
@@ -292,7 +297,7 @@ ul {
           position: absolute;
           right: 0px;
           top: 0;
-          border-color:   #000000 #FFF;
+          border-color: $black $white;
           border-style: solid;
           border-width: 0px 0px 0px 0px;
           height: 0px;
@@ -306,7 +311,7 @@ ul {
             border-width: 0px 60px 60px 0px;
           }
           @include breakpoint(extra-large-screen-up) {
-            border-width: 0px 80px 80px 0px;
+            border-width: 0px 100px 100px 0px;
           }
         }
         &:hover {
@@ -335,8 +340,35 @@ ul {
         @include breakpoint(extra-large-screen-up) {
           padding: 40px;
         }
+        .paragraph {
+          min-height: 24px;
+          transform: translateZ(0);
+          -webkit-transform: translateZ(0);
+          @include breakpoint(medium-screen-up) {
+            min-height: 30px;
+          }
+          @include breakpoint(extra-large-screen-up) {
+            min-height: 42px;
+          }
+        }
         .company {
           width: 100%;
+          min-height: 72px;
+          @include breakpoint(medium-screen-up) {
+            min-height: 90px;
+          }
+          @include breakpoint(extra-large-screen-up) {
+            min-height: 126px;
+          }
+          &.bottom {
+            min-height: 24px;
+            @include breakpoint(medium-screen-up) {
+              min-height: 30px;
+            }
+            @include breakpoint(extra-large-screen-up) {
+              min-height: 42px;
+            }
+          }
         }
         .logo {
           display: flex;
@@ -353,7 +385,92 @@ ul {
         }
         .info {
           width: 100%;
+          min-height: 72px;
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
+          @include breakpoint(medium-screen-up) {
+            min-height: 90px;
+          }
+          @include breakpoint(extra-large-screen-up) {
+            min-height: 126px;
+          }
+          &.bottom {
+            min-height: 24px;
+            @include breakpoint(medium-screen-up) {
+              min-height: 30px;
+            }
+            @include breakpoint(extra-large-screen-up) {
+              min-height: 42px;
+            }
+          }
+          .info-link-container {
+            display: flex;
+            // a {
+            //   &::after {
+            //     content: "";
+            //     position: absolute;
+            //     left: 0px;
+            //     bottom: 50%;
+            //     transform: translateY(50%);
+            //     background: $black;
+            //     height: 2px;
+            //     width: 100%;
+            //     transition: all 0.4s ease;  
+            //   }
+            //   &:hover {
+            //     &::after {
+            //       transform: translateY(0);
+            //       top: unset;
+            //       bottom: 0;                }
+            //   }
+            // }
+          }
         }
+      }
+    }
+  }
+}
+
+.project-header {
+  padding: 24px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  font-weight: 500;
+  z-index: 2;
+  @include breakpoint(medium-screen-up) {
+    padding: 60px;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    // background-color: blue;
+    display: inline-block;
+    min-width: 100%;
+  }
+  .text-container {
+    display: flex;
+    justify-content: space-between;
+    .paragraph {
+      line-height: 0.9;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+    }
+    .project-header-logo {
+      // background-color: red;
+      min-width: 140px;
+    }
+    .project-header-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 24px;
+      text-align: right;
+      font-variant-numeric: slashed-zero;
+      @include breakpoint(medium-screen-up) {
+        column-gap: 60px;
       }
     }
   }
@@ -368,20 +485,10 @@ ul {
   box-sizing: border-box;
   position: relative;
   @include breakpoint(medium-screen-up) {
-    padding: 60px;
+    padding: 120px 60px 60px 60px;
   }
   @include breakpoint(extra-large-screen-up) {
-    padding: 180px;
-  }
-  #logo {
-    position: fixed;
-    top: 24px;
-    left: 24px;
-    &.light {
-      canvas {
-        filter: invert(1);
-      }
-    }
+    padding: 360px 180px 180px 180px;
   }
   .text-container {
     display: grid;
@@ -448,6 +555,7 @@ ul {
           padding: 180px;
         }
         .section-number {
+          font-variant-numeric: slashed-zero;
           @include breakpoint(large-screen-up) {
             grid-column: 4 / span 3;
           }
@@ -571,6 +679,9 @@ ul {
             }
             @include breakpoint(extra-large-screen-up) {
               padding: 96px 40px;
+            }
+            &.dark {
+              background: $black;
             }
           }
           &.screen {
