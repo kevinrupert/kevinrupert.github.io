@@ -4,7 +4,7 @@ $('.content-container').waypoint(function() {
 
 var [block1, block2, block3, block4, block5, block6, block7, block8, block9, block10, block11] = ['.block-1-text', '.block-2-text', '.block-3-text', '.block-4-text', '.block-5-text', '.block-6-text', '.block-7-text', '.block-8-text', '.block-9-text', '.block-10-text', '.block-11-text'].map(selector => baffle(selector));
 
-var	characters = '░█▓ ▒ W█';
+var	characters = '░█▓ ▒ V█';
 var speed = '50';
 
 $('.block-1-text, .block-2-text, .block-3-text, .block-4-text, .block-5-text, .block-6-text, .block-7-text, .block-8-text, .block-9-text, .block-10-text, .block-11-text').hide();
@@ -24,17 +24,17 @@ setTimeout(function() {
   $(item).waypoint(function() {
     window[`block${index + 1}`].reveal(500);
     this.destroy();
-  }, {offset: 'bottom-in-view' });
+  }, {offset: '35%' });
 });
 
 var project = baffle('.project-text', {
-  characters: '░█▓ ▒ W█',
-  speed: 50
+  characters: characters,
+  speed: speed
 })
 
 var logo = baffle('.logo-text', {
-  characters: '░█▓ ▒ W█',
-  speed: 50
+  characters: characters,
+  speed: speed
 })
 
 $('.project-header-details').hide();

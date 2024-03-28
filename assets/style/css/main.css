@@ -92,6 +92,7 @@ body {
   transition: background 0.35s ease-in-out;
   -webkit-font-smoothing: antialiased;
   position: relative;
+  font-variant-numeric: slashed-zero;
 }
 body ::selection {
   background: #0d0d0d;
@@ -521,17 +522,14 @@ ul.bullets li::before {
   font-weight: 500;
 }
 .project-header .text-container .project-header-details {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 24px;
+  display: flex;
   text-align: right;
   font-variant-numeric: slashed-zero;
 }
-@media (min-width: 800px) {
-  .project-header .text-container .project-header-details {
-    column-gap: 60px;
-  }
+.project-header .text-container .project-header-details .company {
+  margin-right: 40px;
 }
+
 .project-hero {
   padding: 24px;
   min-height: 100vh;
@@ -561,19 +559,23 @@ ul.bullets li::before {
     column-gap: 20px;
     row-gap: 60px;
   }
-  .project-hero .text-container.fitt .text-1 {
+  .project-hero .text-container .text-1 {
     grid-row: 1;
     grid-column: 1/6;
   }
-  .project-hero .text-container.fitt .text-2 {
+  .project-hero .text-container .text-2 {
     grid-row: 1;
     grid-column: 7/12;
   }
-  .project-hero .text-container.fitt .text-3 {
+  .project-hero .text-container .text-3 {
     grid-row: 2;
     grid-column: 7/16;
   }
-  .project-hero .text-container.fitt .text-4 {
+  .project-hero .text-container .text-5 {
+    grid-row: 2;
+    grid-column: 1/7;
+  }
+  .project-hero .text-container .text-4 {
     grid-row: 3;
     grid-column: 8/17;
     text-align: right;
@@ -771,6 +773,7 @@ ul.bullets li::before {
   width: 100%;
   max-width: 320px;
   box-shadow: 0 24px 34px -12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
 }
 @media (min-width: 2400px) {
   .content-container .section.grid .grid-container .grid-item.phone-screen img, .content-container .section.grid .grid-container .grid-item.phone-screen video {
@@ -798,6 +801,7 @@ ul.bullets li::before {
 .content-container .section.grid .grid-container .grid-item.screen img, .content-container .section.grid .grid-container .grid-item.screen video {
   width: 100%;
   max-width: 1200px;
+  border-radius: 12px;
 }
 @media (min-width: 2400px) {
   .content-container .section.grid .grid-container .grid-item.screen {
@@ -828,6 +832,10 @@ ul.bullets li::before {
   .content-container .section.grid .grid-container .grid-item.third {
     grid-column: span 4;
   }
+}
+.content-container .section.grid .grid-container .grid-item img {
+  width: 100%;
+  -webkit-font-smoothing: unset;
 }
 
 /*# sourceMappingURL=main.css.map */
