@@ -165,7 +165,7 @@ body {
     letter-spacing: -0.3px;
   }
   span {
-    font-style: italic;
+    // font-style: italic;
     // color: $gray;
   }
   a {
@@ -176,6 +176,9 @@ body {
     &:hover {
       border-bottom: 1px solid rgba($black, 1);
     }
+  }
+  &.bold {
+    font-weight: 500;
   }
 }
 
@@ -206,6 +209,13 @@ ul {
   letter-spacing: -0.5px;
 }
 
+.end-cap {
+  color: #FF5A00;
+  display: inline-block;
+  // transform: rotate(90deg);
+  // transform: scale(0.8);
+}
+
 .home-page {
   .home-page-logo {
     padding: 24px;
@@ -220,13 +230,89 @@ ul {
     @include breakpoint(extra-large-screen-up) {
       padding: 180px;
     }
-    .title-1 {
-      @include breakpoint(large-screen-up) {
-        grid-column: 1 / 16;
+    position: relative;
+    // .title-1 {
+    //   @include breakpoint(large-screen-up) {
+    //     grid-column: 1 / 16;
+    //   }
+    //   // @include breakpoint(extra-large-screen-up) {
+    //   //   grid-column: 2 / 16;
+    //   // }
+    // }
+    .logo {
+      width: 100%;
+      grid-column: span 16;
+    }
+    .sticker-1 {
+      position: absolute;
+      width: 22%;
+      top: 25%;
+      left: 70%;
+      transform: rotate(-20deg);
+      @include breakpoint(medium-screen-up) {
+        width: 19%;
       }
-      // @include breakpoint(extra-large-screen-up) {
-      //   grid-column: 2 / 16;
-      // }
+    }
+    // .sticker-2 {
+    //   position: absolute;
+    //   width: 18%;
+    //   top: 50%;
+    //   left: 34%;
+    //   transform: rotate(20deg);
+    // }
+    // .sticker-3 {
+    //   position: absolute;
+    //   width: 9%;
+    //   top: 10%;
+    //   left: 15%;
+    //   transform: rotate(-10deg);
+    //   z-index: 2;
+    // }
+    .sticker-4 {
+      position: absolute;
+      width: 12%;
+      top: 10%;
+      left: 70%;
+      transform: rotate(12deg);
+      @include breakpoint(medium-screen-up) {
+        width: 10%;
+      }
+    }
+    // .sticker-5 {
+    //   position: absolute;
+    //   width: 18%;
+    //   top: 60%;
+    //   left: 10%;
+    //   transform: rotate(-35deg);
+    // }
+  }
+  .home-page-about {
+    padding: 24px;
+    @include breakpoint(medium-screen-up) {
+      padding: 60px;
+    }
+    @include breakpoint(large-screen-up) {
+      display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      gap: 20px;
+    }
+    @include breakpoint(extra-large-screen-up) {
+      padding: 180px;
+    }
+    .text-container {
+      display: grid;
+      gap: 24px;
+      border-top: 3px solid $black;
+      padding-top: 12px;
+      @include breakpoint(large-screen-up) {
+        grid-column: 7 / 17;
+      }
+      @include breakpoint(extra-large-screen-up) {
+        border-top: 4px solid $black;
+      }
+      .paragraph {
+        font-weight: 500;
+      }
     }
   }
   .timeline-grid {
@@ -259,6 +345,21 @@ ul {
       // }
       img {
         width: 100%;
+      }
+    }
+    .about-grid-item {
+      padding: 20px;
+      @include breakpoint(medium-screen-up) {
+        grid-column: span 8;
+        border-top: 1px solid $black;
+        padding: 20px 0 0 0;
+        margin-top: 100px;
+      }
+      @include breakpoint(large-screen-up) {
+        grid-column: 7 / 17;
+      }
+      @include breakpoint(extra-large-screen-up) {
+        margin-top: 160px;
       }
     }
     .grid-item {
@@ -473,6 +574,19 @@ ul {
       // background-color: red;
       min-width: 140px;
       font-weight: 500;
+      img {
+        height: 60px;
+        margin-left: -20px;
+        margin-top: -20px;
+        @include breakpoint(large-screen-up) {
+          height: 80px;
+        }
+        @include breakpoint(extra-large-screen-up) {
+          height: 120px;
+          margin-left: -40px;
+          margin-top: -40px;
+        }
+      }
     }
     .project-header-details {
       // display: grid;

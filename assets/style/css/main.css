@@ -54,25 +54,13 @@ table {
   font-family: "APK Protocol";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/APK-Protocol-Regular-Trial.eot?#iefix") format("embedded-opentype"), url("../fonts/APK-Protocol-Regular-Trial.woff2") format("woff2"), url("../fonts/APK-Protocol-Regular-Trial.woff") format("woff"), url("../fonts/APK-Protocol-Regular-Trial.ttf") format("truetype"), url("../fonts/APK-Protocol-Regular-Trial.svg#APK Protocol") format("svg");
-}
-@font-face {
-  font-family: "APK Protocol";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/APK-Protocol-Regular-Italic-Trial.eot?#iefix") format("embedded-opentype"), url("../fonts/APK-Protocol-Regular-Italic-Trial.woff2") format("woff2"), url("../fonts/APK-Protocol-Regular-Italic-Trial.woff") format("woff"), url("../fonts/APK-Protocol-Regular-Italic-Trial.ttf") format("truetype"), url("../fonts/APK-Protocol-Regular-Italic-Trial.svg#APK Protocol") format("svg");
+  src: url("../fonts/APK-Protocol-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/APK-Protocol-Regular.woff2") format("woff2"), url("../fonts/APK-Protocol-Regular.woff") format("woff"), url("../fonts/APK-Protocol-Regular.ttf") format("truetype"), url("../fonts/APK-Protocol-Regular.svg#APK Protocol") format("svg");
 }
 @font-face {
   font-family: "APK Protocol";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/APK-Protocol-Medium-Trial.eot?#iefix") format("embedded-opentype"), url("../fonts/APK-Protocol-Medium-Trial.woff2") format("woff2"), url("../fonts/APK-Protocol-Medium-Trial.woff") format("woff"), url("../fonts/APK-Protocol-Medium-Trial.ttf") format("truetype"), url("../fonts/APK-Protocol-Medium-Trial.svg#APK Protocol") format("svg");
-}
-@font-face {
-  font-family: "Nudge";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/VCNudge-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/VCNudge-ExtraBold.woff2") format("woff2"), url("../fonts/VCNudge-ExtraBold.woff") format("woff"), url("../fonts/VCNudge-ExtraBold.ttf") format("truetype"), url("../fonts/VCNudge-ExtraBold.svg#Nudge") format("svg");
+  src: url("../fonts/APK-Protocol-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/APK-Protocol-Medium.woff2") format("woff2"), url("../fonts/APK-Protocol-Medium.woff") format("woff"), url("../fonts/APK-Protocol-Medium.ttf") format("truetype"), url("../fonts/APK-Protocol-Medium.svg#APK Protocol") format("svg");
 }
 html {
   min-height: 100%;
@@ -199,9 +187,6 @@ body.light {
     letter-spacing: -0.3px;
   }
 }
-.paragraph span {
-  font-style: italic;
-}
 .paragraph a {
   text-decoration: none;
   color: #0d0d0d;
@@ -210,6 +195,9 @@ body.light {
 }
 .paragraph a:hover {
   border-bottom: 1px solid #0d0d0d;
+}
+.paragraph.bold {
+  font-weight: 500;
 }
 
 ul {
@@ -235,8 +223,14 @@ ul.bullets li::before {
   letter-spacing: -0.5px;
 }
 
+.end-cap {
+  color: #FF5A00;
+  display: inline-block;
+}
+
 .home-page .home-page-logo {
   padding: 24px;
+  position: relative;
 }
 @media (min-width: 800px) {
   .home-page .home-page-logo {
@@ -255,10 +249,72 @@ ul.bullets li::before {
     padding: 180px;
   }
 }
-@media (min-width: 1200px) {
-  .home-page .home-page-logo .title-1 {
-    grid-column: 1/16;
+.home-page .home-page-logo .logo {
+  width: 100%;
+  grid-column: span 16;
+}
+.home-page .home-page-logo .sticker-1 {
+  position: absolute;
+  width: 22%;
+  top: 25%;
+  left: 70%;
+  transform: rotate(-20deg);
+}
+@media (min-width: 800px) {
+  .home-page .home-page-logo .sticker-1 {
+    width: 19%;
   }
+}
+.home-page .home-page-logo .sticker-4 {
+  position: absolute;
+  width: 12%;
+  top: 10%;
+  left: 70%;
+  transform: rotate(12deg);
+}
+@media (min-width: 800px) {
+  .home-page .home-page-logo .sticker-4 {
+    width: 10%;
+  }
+}
+.home-page .home-page-about {
+  padding: 24px;
+}
+@media (min-width: 800px) {
+  .home-page .home-page-about {
+    padding: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .home-page .home-page-about {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 20px;
+  }
+}
+@media (min-width: 2400px) {
+  .home-page .home-page-about {
+    padding: 180px;
+  }
+}
+.home-page .home-page-about .text-container {
+  display: grid;
+  gap: 24px;
+  border-top: 3px solid #0d0d0d;
+  padding-top: 12px;
+}
+@media (min-width: 1200px) {
+  .home-page .home-page-about .text-container {
+    grid-column: 7/17;
+  }
+}
+@media (min-width: 2400px) {
+  .home-page .home-page-about .text-container {
+    border-top: 4px solid #0d0d0d;
+  }
+}
+.home-page .home-page-about .text-container .paragraph {
+  font-weight: 500;
 }
 .home-page .timeline-grid {
   display: grid;
@@ -296,6 +352,27 @@ ul.bullets li::before {
 }
 .home-page .timeline-grid .portrait img {
   width: 100%;
+}
+.home-page .timeline-grid .about-grid-item {
+  padding: 20px;
+}
+@media (min-width: 800px) {
+  .home-page .timeline-grid .about-grid-item {
+    grid-column: span 8;
+    border-top: 1px solid #0d0d0d;
+    padding: 20px 0 0 0;
+    margin-top: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .home-page .timeline-grid .about-grid-item {
+    grid-column: 7/17;
+  }
+}
+@media (min-width: 2400px) {
+  .home-page .timeline-grid .about-grid-item {
+    margin-top: 160px;
+  }
 }
 .home-page .timeline-grid .grid-item {
   background: #FAFAFA;
@@ -520,6 +597,23 @@ ul.bullets li::before {
 .project-header .text-container .project-header-logo {
   min-width: 140px;
   font-weight: 500;
+}
+.project-header .text-container .project-header-logo img {
+  height: 60px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+@media (min-width: 1200px) {
+  .project-header .text-container .project-header-logo img {
+    height: 80px;
+  }
+}
+@media (min-width: 2400px) {
+  .project-header .text-container .project-header-logo img {
+    height: 120px;
+    margin-left: -40px;
+    margin-top: -40px;
+  }
 }
 .project-header .text-container .project-header-details {
   display: flex;

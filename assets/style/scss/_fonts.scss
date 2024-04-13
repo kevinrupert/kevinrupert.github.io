@@ -1,7 +1,3 @@
-@include font-face("APK Protocol", "../fonts/APK-Protocol-Regular-Trial", 400, normal, $file-formats: woff woff2);
+@include font-face("APK Protocol", "../fonts/APK-Protocol-Regular", 400, normal, $file-formats: woff woff2);
 
-@include font-face("APK Protocol", "../fonts/APK-Protocol-Regular-Italic-Trial", 400, italic, $file-formats: woff woff2);
-
-@include font-face("APK Protocol", "../fonts/APK-Protocol-Medium-Trial", 500, normal, $file-formats: woff woff2);
-
-@include font-face("Nudge", "../fonts/VCNudge-ExtraBold", 800, $file-formats: woff woff2);
+@include font-face("APK Protocol", "../fonts/APK-Protocol-Medium", 500, normal, $file-formats: woff woff2);

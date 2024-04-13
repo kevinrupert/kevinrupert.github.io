@@ -24,7 +24,7 @@ setTimeout(function() {
   $(item).waypoint(function() {
     window[`block${index + 1}`].reveal(500);
     this.destroy();
-  }, {offset: '35%' });
+  }, {offset: 'bottom-in-view' });
 });
 
 var project = baffle('.project-text', {
@@ -32,10 +32,10 @@ var project = baffle('.project-text', {
   speed: speed
 })
 
-var logo = baffle('.logo-text', {
-  characters: characters,
-  speed: speed
-})
+// var logo = baffle('.logo-text', {
+//   characters: characters,
+//   speed: speed
+// })
 
 $('.project-header-details').hide();
 
@@ -49,17 +49,17 @@ setTimeout(function() {
   project.reveal(500);
 }, 100);
 
-$('.project-header-logo').hide();
+// $('.project-header-logo').hide();
 
-logo.start();
+// logo.start();
 
-setTimeout(function() {
-  $('.project-header-logo').show();
-}, 50);
+// setTimeout(function() {
+//   $('.project-header-logo').show();
+// }, 50);
 
-setTimeout(function() {
-  logo.reveal(500);
-}, 100);
+// setTimeout(function() {
+//   logo.reveal(500);
+// }, 100);
 
 // $('.project-header-logo').hover(function() {
 //   logo.start();
