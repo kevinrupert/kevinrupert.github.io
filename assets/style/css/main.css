@@ -284,7 +284,7 @@ ul.bullets li::before {
   left: 70%;
   transform: rotate(-20deg);
 }
-@media (min-width: 800px) {
+@media (min-width: 2400px) {
   .home-page .home-page-logo .sticker-1 {
     width: 19%;
   }
@@ -296,7 +296,7 @@ ul.bullets li::before {
   left: 70%;
   transform: rotate(12deg);
 }
-@media (min-width: 800px) {
+@media (min-width: 2400px) {
   .home-page .home-page-logo .sticker-4 {
     width: 10%;
   }
