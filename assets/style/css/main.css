@@ -338,6 +338,9 @@ ul.bullets li::before {
     grid-template-columns: repeat(16, 1fr);
   }
 }
+.home-page .timeline-grid .portrait {
+  background: #0d0d0d;
+}
 @media (min-width: 800px) {
   .home-page .timeline-grid .portrait {
     grid-column: span 4;

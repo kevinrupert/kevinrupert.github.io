@@ -331,6 +331,7 @@ ul {
       grid-template-columns: repeat(16, 1fr);
     }
     .portrait {
+      background: $black;
       @include breakpoint(medium-screen-up) {
         grid-column: span 4;
       }
