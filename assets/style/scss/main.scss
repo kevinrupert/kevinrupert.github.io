@@ -98,7 +98,7 @@ body {
   line-height: 0.9;
   letter-spacing: -2.5px;
   @include breakpoint(medium-screen-up) {
-    font-size: 13vw;
+    font-size: 16vw;
     letter-spacing: -8px;
   }
   @include breakpoint (extra-large-screen-up) {
@@ -634,12 +634,12 @@ ul {
   box-sizing: border-box;
   position: relative;
   @include breakpoint(medium-screen-up) {
-    padding: 120px 60px 60px 60px;
-    min-height: 120vh;
+    padding: 200px 60px 60px 60px;
+    // min-height: 120vh;
   }
   @include breakpoint(extra-large-screen-up) {
-    padding: 360px 180px 180px 180px;
-    min-height: 100vh;
+    padding: 440px 180px 180px 180px;
+    // min-height: 100vh;
   }
   .text-container {
     display: grid;
@@ -675,7 +675,7 @@ ul {
       }
       .text-4 {
         grid-row: 3;
-        grid-column: 8 / 17;
+        grid-column: 4 / 17;
         text-align: right;
       }
     }

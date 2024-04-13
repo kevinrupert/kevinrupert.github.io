@@ -107,7 +107,7 @@ body.light {
 }
 @media (min-width: 800px) {
   .title-1 {
-    font-size: 13vw;
+    font-size: 16vw;
     letter-spacing: -8px;
   }
 }
@@ -659,14 +659,12 @@ ul.bullets li::before {
 }
 @media (min-width: 800px) {
   .project-hero {
-    padding: 120px 60px 60px 60px;
-    min-height: 120vh;
+    padding: 200px 60px 60px 60px;
   }
 }
 @media (min-width: 2400px) {
   .project-hero {
-    padding: 360px 180px 180px 180px;
-    min-height: 100vh;
+    padding: 440px 180px 180px 180px;
   }
 }
 .project-hero .text-container {
@@ -697,7 +695,7 @@ ul.bullets li::before {
   }
   .project-hero .text-container .text-4 {
     grid-row: 3;
-    grid-column: 8/17;
+    grid-column: 4/17;
     text-align: right;
   }
 }
