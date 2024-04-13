@@ -623,7 +623,6 @@ ul.bullets li::before {
   -webkit-transform: translateZ(0);
 }
 .project-header .text-container .project-header-logo {
-  min-width: 140px;
   font-weight: 500;
 }
 .project-header .text-container .project-header-logo img {
