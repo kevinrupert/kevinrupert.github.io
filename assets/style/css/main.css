@@ -340,6 +340,7 @@ ul.bullets li::before {
 }
 .home-page .timeline-grid .portrait {
   background: #0d0d0d;
+  display: flex;
 }
 @media (min-width: 800px) {
   .home-page .timeline-grid .portrait {
