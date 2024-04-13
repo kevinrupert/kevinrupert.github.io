@@ -264,7 +264,7 @@ ul {
       left: 70%;
       transform: rotate(-20deg);
       @include breakpoint(extra-large-screen-up) {
-        width: 19%;
+        width: 24%;
       }
     }
     // .sticker-2 {
@@ -289,7 +289,7 @@ ul {
       left: 70%;
       transform: rotate(12deg);
       @include breakpoint(extra-large-screen-up) {
-        width: 10%;
+        // width: 10%;
       }
     }
     // .sticker-5 {

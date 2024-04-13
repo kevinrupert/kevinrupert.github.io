@@ -286,7 +286,7 @@ ul.bullets li::before {
 }
 @media (min-width: 2400px) {
   .home-page .home-page-logo .sticker-1 {
-    width: 19%;
+    width: 24%;
   }
 }
 .home-page .home-page-logo .sticker-4 {
@@ -295,11 +295,6 @@ ul.bullets li::before {
   top: 10%;
   left: 70%;
   transform: rotate(12deg);
-}
-@media (min-width: 2400px) {
-  .home-page .home-page-logo .sticker-4 {
-    width: 10%;
-  }
 }
 .home-page .home-page-about {
   padding: 24px;
