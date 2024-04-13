@@ -224,8 +224,32 @@ ul.bullets li::before {
 }
 
 .end-cap {
-  color: #FF5A00;
-  display: inline-block;
+  height: 16px;
+  vertical-align: middle;
+}
+@media (min-width: 800px) {
+  .end-cap {
+    height: 20.5px;
+  }
+}
+@media (min-width: 2400px) {
+  .end-cap {
+    height: 29.5px;
+  }
+}
+.end-cap.title-2 {
+  height: 27.5px;
+  vertical-align: middle;
+}
+@media (min-width: 800px) {
+  .end-cap.title-2 {
+    height: 32px;
+  }
+}
+@media (min-width: 2400px) {
+  .end-cap.title-2 {
+    height: 45.5px;
+  }
 }
 
 .home-page .home-page-logo {
@@ -358,7 +382,7 @@ ul.bullets li::before {
   width: 100%;
 }
 .home-page .timeline-grid .about-grid-item {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 @media (min-width: 800px) {
   .home-page .timeline-grid .about-grid-item {

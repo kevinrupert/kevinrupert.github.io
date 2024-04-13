@@ -210,10 +210,24 @@ ul {
 }
 
 .end-cap {
-  color: #FF5A00;
-  display: inline-block;
-  // transform: rotate(90deg);
-  // transform: scale(0.8);
+  height: 16px;
+  vertical-align: middle;
+  @include breakpoint(medium-screen-up) {
+    height: 20.5px;
+  }
+  @include breakpoint(extra-large-screen-up) {
+    height: 29.5px;
+  }
+  &.title-2 {
+    height: 27.5px;
+    vertical-align: middle;
+    @include breakpoint(medium-screen-up) {
+      height: 32px;
+    }
+    @include breakpoint(extra-large-screen-up) {
+      height: 45.5px;
+    }
+  }
 }
 
 .home-page {
@@ -350,7 +364,7 @@ ul {
       }
     }
     .about-grid-item {
-      padding: 20px;
+      padding: 0 20px 20px 20px;
       @include breakpoint(medium-screen-up) {
         grid-column: span 8;
         border-top: 1px solid $black;
