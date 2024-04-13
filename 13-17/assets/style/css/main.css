@@ -95,7 +95,7 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 1;
-  color: #292929;
+  color: #0d0d0d;
   background: #F6F0EA;
   -webkit-font-smoothing: antialiased;
   position: relative;
@@ -109,7 +109,7 @@ body.fitt-case-study {
   background: #F2F2F4;
 }
 body.dark {
-  background: #292929;
+  background: #0d0d0d;
   color: #F6F0EA;
 }
 body.dark a {
@@ -138,12 +138,12 @@ ul.bullets li::before {
 
 a {
   text-decoration: none;
-  color: #292929;
+  color: #0d0d0d;
   border-bottom: 1px solid rgba(123, 123, 123, 0.5);
   transition: all 0.3s ease;
 }
 a:hover {
-  border-bottom: 1px solid #292929;
+  border-bottom: 1px solid #0d0d0d;
 }
 
 .title-1 {
@@ -260,7 +260,7 @@ a:hover {
   border: none;
 }
 .menu-bar .menu-icon .icon-container .bar-1, .menu-bar .menu-icon .icon-container .bar-2 {
-  background: #292929;
+  background: #0d0d0d;
   height: 2px;
   width: 20px;
   transition: all 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -309,22 +309,22 @@ a:hover {
   right: 0;
   top: 0;
   background: #F6F0EA;
-  border-left: 2px solid #292929;
+  border-left: 2px solid #0d0d0d;
   transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   overflow-y: scroll;
 }
 .menu.dark {
-  background: #292929;
+  background: #0d0d0d;
   border-left: 2px solid #F6F0EA;
 }
 .menu.dark .menu-grid .menu-item {
   background: #F6F0EA;
 }
 .menu.dark .menu-grid .menu-item a {
-  color: #292929;
+  color: #0d0d0d;
 }
 .menu.dark .menu-grid .menu-item a .title {
-  border-top: 2px solid #292929;
+  border-top: 2px solid #0d0d0d;
 }
 .menu .menu-grid {
   padding: 20px 64px 20px 20px;
@@ -347,7 +347,7 @@ a:hover {
   opacity: 0;
   transition: all 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transform: translateX(20px);
-  background: #292929;
+  background: #0d0d0d;
   color: #F6F0EA;
 }
 .menu .menu-grid .menu-item:last-child {
@@ -799,7 +799,7 @@ a:hover {
   transform: rotateX(60deg) rotateZ(45deg);
 }
 .section.experience-model .model .layers .layer-2 {
-  border: 3px solid #292929;
+  border: 3px solid #0d0d0d;
   top: 0;
   left: 0;
   position: absolute;
@@ -808,8 +808,8 @@ a:hover {
 }
 .section.experience-model .model .layers .layer-3 {
   position: relative;
-  background: #292929;
-  border: 3px solid #292929;
+  background: #0d0d0d;
+  border: 3px solid #0d0d0d;
   position: absolute;
   top: 0;
   left: 0;
@@ -1093,7 +1093,7 @@ a:hover {
 .home-page-container .home-page .intro .timeline .timeline-section .projects .project-link .project {
   border: none;
   background: #F6F0EA;
-  color: #292929;
+  color: #0d0d0d;
 }
 .home-page-container .home-page .intro .timeline .timeline-section .projects .project-link .project .icon {
   transition: all 0.3s ease;
