@@ -650,11 +650,11 @@ ul {
       row-gap: 60px;
       .text-1 {
         grid-row: 1;
-        grid-column: 1 / 6;
+        grid-column: 1 / 17;
       }
       .text-2 {
         grid-row: 1;
-        grid-column: 7 / 12;
+        grid-column: 7 / 17;
         @include breakpoint(extra-large-screen-up) {
           // grid-column: 8 / 12;
         }

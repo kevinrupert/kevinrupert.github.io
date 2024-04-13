@@ -679,11 +679,11 @@ ul.bullets li::before {
   }
   .project-hero .text-container .text-1 {
     grid-row: 1;
-    grid-column: 1/6;
+    grid-column: 1/17;
   }
   .project-hero .text-container .text-2 {
     grid-row: 1;
-    grid-column: 7/12;
+    grid-column: 7/17;
   }
   .project-hero .text-container .text-3 {
     grid-row: 2;
