@@ -259,12 +259,12 @@ ul {
     }
     .sticker-1 {
       position: absolute;
-      width: 22%;
+      width: 24%;
       top: 25%;
       left: 70%;
       transform: rotate(-20deg);
       @include breakpoint(extra-large-screen-up) {
-        width: 24%;
+        // width: 24%;
       }
     }
     // .sticker-2 {

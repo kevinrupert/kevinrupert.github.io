@@ -279,15 +279,10 @@ ul.bullets li::before {
 }
 .home-page .home-page-logo .sticker-1 {
   position: absolute;
-  width: 22%;
+  width: 24%;
   top: 25%;
   left: 70%;
   transform: rotate(-20deg);
-}
-@media (min-width: 2400px) {
-  .home-page .home-page-logo .sticker-1 {
-    width: 24%;
-  }
 }
 .home-page .home-page-logo .sticker-4 {
   position: absolute;
