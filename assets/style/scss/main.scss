@@ -608,6 +608,7 @@ ul {
       // display: grid;
       // grid-template-columns: repeat(2, 1fr);
       // column-gap: 24px;
+      font-weight: 500;
       display: flex;
       text-align: right;
       font-variant-numeric: slashed-zero;
@@ -618,7 +619,7 @@ ul {
         // grid-template-columns: repeat(2, 220px);
       }
       .company {
-        margin-right: 40px
+        margin-right: 40px;
       }
     }
   }
@@ -634,9 +635,11 @@ ul {
   position: relative;
   @include breakpoint(medium-screen-up) {
     padding: 120px 60px 60px 60px;
+    min-height: 120vh;
   }
   @include breakpoint(extra-large-screen-up) {
     padding: 360px 180px 180px 180px;
+    min-height: 100vh;
   }
   .text-container {
     display: grid;

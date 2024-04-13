@@ -644,6 +644,7 @@ ul.bullets li::before {
   }
 }
 .project-header .text-container .project-header-details {
+  font-weight: 500;
   display: flex;
   text-align: right;
   font-variant-numeric: slashed-zero;
@@ -664,11 +665,13 @@ ul.bullets li::before {
 @media (min-width: 800px) {
   .project-hero {
     padding: 120px 60px 60px 60px;
+    min-height: 120vh;
   }
 }
 @media (min-width: 2400px) {
   .project-hero {
     padding: 360px 180px 180px 180px;
+    min-height: 100vh;
   }
 }
 .project-hero .text-container {
