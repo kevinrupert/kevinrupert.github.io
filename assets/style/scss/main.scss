@@ -592,15 +592,15 @@ ul {
       font-weight: 500;
       img {
         height: 60px;
-        margin-left: -20px;
-        margin-top: -20px;
+        // margin-left: -20px;
+        // margin-top: -20px;
         @include breakpoint(large-screen-up) {
           height: 80px;
         }
         @include breakpoint(extra-large-screen-up) {
           height: 120px;
-          margin-left: -40px;
-          margin-top: -40px;
+          // margin-left: -40px;
+          // margin-top: -40px;
         }
       }
     }

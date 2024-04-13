@@ -628,8 +628,6 @@ ul.bullets li::before {
 }
 .project-header .text-container .project-header-logo img {
   height: 60px;
-  margin-left: -20px;
-  margin-top: -20px;
 }
 @media (min-width: 1200px) {
   .project-header .text-container .project-header-logo img {
@@ -639,8 +637,6 @@ ul.bullets li::before {
 @media (min-width: 2400px) {
   .project-header .text-container .project-header-logo img {
     height: 120px;
-    margin-left: -40px;
-    margin-top: -40px;
   }
 }
 .project-header .text-container .project-header-details {
