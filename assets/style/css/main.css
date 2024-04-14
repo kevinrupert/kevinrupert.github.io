@@ -711,7 +711,6 @@ ul.bullets li::before {
 .content-container .section.hero .text {
   padding: 60px 24px;
   display: grid;
-  gap: 36px;
 }
 @media (min-width: 800px) {
   .content-container .section.hero .text {
