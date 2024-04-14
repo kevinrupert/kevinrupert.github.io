@@ -354,7 +354,21 @@ ul.bullets li::before {
 }
 .home-page .timeline-grid .portrait {
   background: #0d0d0d;
+  position: relative;
   display: flex;
+}
+.home-page .timeline-grid .portrait:before {
+  display: inline-block;
+  content: "";
+  width: 100%;
+  padding-top: 133.3333333333%;
+}
+.home-page .timeline-grid .portrait > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 @media (min-width: 800px) {
   .home-page .timeline-grid .portrait {

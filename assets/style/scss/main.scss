@@ -346,6 +346,7 @@ ul {
     }
     .portrait {
       background: $black;
+      @include aspect-ratio(3, 4);
       display: flex;
       @include breakpoint(medium-screen-up) {
         grid-column: span 4;
