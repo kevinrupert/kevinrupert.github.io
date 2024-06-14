@@ -748,12 +748,12 @@ ul.bullets li::before {
 }
 @media (min-width: 1200px) {
   .content-container .section.hero .text .section-number {
-    grid-column: 4/span 3;
+    grid-column: 3/span 3;
   }
 }
 @media (min-width: 1200px) {
   .content-container .section.hero .text .section-title {
-    grid-column: 7/span 9;
+    grid-column: 6/span 9;
   }
 }
 @media (min-width: 1200px) {
@@ -774,7 +774,7 @@ ul.bullets li::before {
 }
 @media (min-width: 1200px) {
   .content-container .section.hero .image img {
-    grid-column: 4/span 12;
+    grid-column: 3/span 12;
   }
 }
 .content-container .section.text {
@@ -837,12 +837,12 @@ ul.bullets li::before {
 }
 @media (min-width: 1200px) {
   .content-container .section.text .text-section .text-block .paragraph-block {
-    grid-column: 7/span 9;
+    grid-column: 6/span 9;
   }
 }
 @media (min-width: 2400px) {
   .content-container .section.text .text-section .text-block .paragraph-block {
-    grid-column: 7/span 8;
+    grid-column: 6/span 8;
   }
 }
 .content-container .section.grid {
@@ -878,7 +878,7 @@ ul.bullets li::before {
 }
 @media (min-width: 1200px) {
   .content-container .section.grid .grid-container {
-    grid-column: 4/span 12;
+    grid-column: 3/span 12;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
   }
